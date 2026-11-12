@@ -47,7 +47,6 @@ import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
 // TODO:
-// - bird nests
 // - axe effects/charges
 class Woodcutting
 @Inject
@@ -160,7 +159,7 @@ constructor(
             val respawnTime = type.resolveRespawnTime(random)
             locRepo.change(tree, type.treeStump, respawnTime)
             resetAnim()
-            soundSynth("synth.tree_fall_sound")
+            soundSynth("synth.tree_fall")
             if (respawnTime != Int.MAX_VALUE) {
                 sendLocalOverlayLoc(tree, type, respawnTime)
             }

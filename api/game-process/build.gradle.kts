@@ -8,6 +8,7 @@ kotlin {
 }
 
 dependencies {
+    testImplementation(libs.mockk)
     implementation(libs.kotlin.inline.logger)
     runtimeOnly(libs.logback.classic)
     implementation(libs.fastutil)
@@ -28,6 +29,7 @@ dependencies {
     implementation(projects.api.registry)
     implementation(projects.api.repo)
     implementation(projects.api.route)
+    implementation(projects.api.serverConfig)
     implementation(projects.api.stats.levelmod)
     implementation(projects.api.utils.utilsLogging)
     implementation(projects.api.utils.utilsMap)
