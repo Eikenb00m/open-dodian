@@ -1,0 +1,12 @@
+[gamevals.varp]
+dodian_dad_kills = 64426
+dodian_ungadulu_kills = 64427
+dodian_abyssal_guardian_kills = 64428
+dodian_san_tojalon_kills = 64429
+dodian_black_knight_titan_kills = 64430
+dodian_jungle_demon_kills = 64431
+dodian_ice_queen_kills = 64432
+dodian_black_demon_kills = 64433
+
+[gamevals.enum]
+dodian_bosses = 64501

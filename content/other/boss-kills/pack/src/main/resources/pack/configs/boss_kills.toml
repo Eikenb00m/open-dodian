@@ -1,0 +1,305 @@
+# Kill counts for the Dodian bosses and the OSRS hiscore bosses that had none.
+# The boss kill broadcast reads enum.dodian_bosses and the hiscores' boss varps.
+
+[[varp]]
+id = "varp.dodian_dad_kills"
+scope = "Perm"
+transmit = "Never"
+
+[[varp]]
+id = "varp.dodian_ungadulu_kills"
+scope = "Perm"
+transmit = "Never"
+
+[[varp]]
+id = "varp.dodian_abyssal_guardian_kills"
+scope = "Perm"
+transmit = "Never"
+
+[[varp]]
+id = "varp.dodian_san_tojalon_kills"
+scope = "Perm"
+transmit = "Never"
+
+[[varp]]
+id = "varp.dodian_black_knight_titan_kills"
+scope = "Perm"
+transmit = "Never"
+
+[[varp]]
+id = "varp.dodian_jungle_demon_kills"
+scope = "Perm"
+transmit = "Never"
+
+[[varp]]
+id = "varp.dodian_ice_queen_kills"
+scope = "Perm"
+transmit = "Never"
+
+[[varp]]
+id = "varp.dodian_black_demon_kills"
+scope = "Perm"
+transmit = "Never"
+
+[[npc]]
+id = "npc.troll_champion"
+inherit = "npc.troll_champion"
+
+[npc.params]
+"param.killcount_varp" = "varp.dodian_dad_kills"
+
+[[npc]]
+id = "npc.ungadulu_good"
+inherit = "npc.ungadulu_good"
+
+[npc.params]
+"param.killcount_varp" = "varp.dodian_ungadulu_kills"
+
+[[npc]]
+id = "npc.abyssal_pyramid"
+inherit = "npc.abyssal_pyramid"
+
+[npc.params]
+"param.killcount_varp" = "varp.dodian_abyssal_guardian_kills"
+
+[[npc]]
+id = "npc.san_tojalon"
+inherit = "npc.san_tojalon"
+
+[npc.params]
+"param.killcount_varp" = "varp.dodian_san_tojalon_kills"
+
+[[npc]]
+id = "npc.black_knight_titan"
+inherit = "npc.black_knight_titan"
+
+[npc.params]
+"param.killcount_varp" = "varp.dodian_black_knight_titan_kills"
+
+[[npc]]
+id = "npc.mm_demon"
+inherit = "npc.mm_demon"
+
+[npc.params]
+"param.killcount_varp" = "varp.dodian_jungle_demon_kills"
+
+[[npc]]
+id = "npc.ice_queen"
+inherit = "npc.ice_queen"
+
+[npc.params]
+"param.killcount_varp" = "varp.dodian_ice_queen_kills"
+
+[[npc]]
+id = "npc.grandtree_blackdemon"
+inherit = "npc.grandtree_blackdemon"
+
+[npc.params]
+"param.killcount_varp" = "varp.dodian_black_demon_kills"
+
+[[npc]]
+id = "npc.vetion_2"
+inherit = "npc.vetion_2"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_vetion_kills"
+
+[[npc]]
+id = "npc.vetion_2_single"
+inherit = "npc.vetion_2_single"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_calvarion_kills"
+
+[[npc]]
+id = "npc.chaoselemental"
+inherit = "npc.chaoselemental"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_chaosele_kills"
+
+[[npc]]
+id = "npc.chaos_fanatic"
+inherit = "npc.chaos_fanatic"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_chaosfanatic_kills"
+
+[[npc]]
+id = "npc.corp_beast"
+inherit = "npc.corp_beast"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_corp_kills"
+
+[[npc]]
+id = "npc.crazy_archaeologist"
+inherit = "npc.crazy_archaeologist"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_crazyarchaeologist_kills"
+
+[[npc]]
+id = "npc.fossil_crazy_archaeologist"
+inherit = "npc.fossil_crazy_archaeologist"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_derangedarchaeologist_kills"
+
+[[npc]]
+id = "npc.dagcave_magic_boss"
+inherit = "npc.dagcave_magic_boss"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_prime_kills"
+
+[[npc]]
+id = "npc.dagcave_melee_boss"
+inherit = "npc.dagcave_melee_boss"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_rex_kills"
+
+[[npc]]
+id = "npc.dagcave_ranged_boss"
+inherit = "npc.dagcave_ranged_boss"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_supreme_kills"
+
+[[npc]]
+id = "npc.mole_giant"
+inherit = "npc.mole_giant"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_mole_kills"
+
+[[npc]]
+id = "npc.hespori"
+inherit = "npc.hespori"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_hespori_kills"
+
+[[npc]]
+id = "npc.kalphite_flyingqueen"
+inherit = "npc.kalphite_flyingqueen"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_kalphite_kills"
+
+[[npc]]
+id = "npc.sarachnis"
+inherit = "npc.sarachnis"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_sarachnis_kills"
+
+[[npc]]
+id = "npc.scorpia"
+inherit = "npc.scorpia"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_scorpia_kills"
+
+[[npc]]
+id = "npc.cata_boss"
+inherit = "npc.cata_boss"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_cata_boss_kills"
+
+[[npc]]
+id = "npc.smoke_devil_boss"
+inherit = "npc.smoke_devil_boss"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_thermy_kills"
+
+[[npc]]
+id = "npc.tzhaar_fightcave_swarm_boss"
+inherit = "npc.tzhaar_fightcave_swarm_boss"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_jad_kills"
+
+[[npc]]
+id = "npc.vorkath"
+inherit = "npc.vorkath"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_vorkath_kills"
+
+[[npc]]
+id = "npc.snakeboss_boss_ranged"
+inherit = "npc.snakeboss_boss_ranged"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_snakeboss_kills"
+
+[[npc]]
+id = "npc.snakeboss_boss_melee"
+inherit = "npc.snakeboss_boss_melee"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_snakeboss_kills"
+
+[[npc]]
+id = "npc.snakeboss_boss_magic"
+inherit = "npc.snakeboss_boss_magic"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_snakeboss_kills"
+
+[[npc]]
+id = "npc.amoxliatl"
+inherit = "npc.amoxliatl"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_amoxliatl_kills"
+
+[[npc]]
+id = "npc.huey_head"
+inherit = "npc.huey_head"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_huey_kills"
+
+[[npc]]
+id = "npc.yama"
+inherit = "npc.yama"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_yama_kills"
+
+[[npc]]
+id = "npc.mad_angel"
+inherit = "npc.mad_angel"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_mad_angel_kills"
+
+[[npc]]
+id = "npc.maggot_king"
+inherit = "npc.maggot_king"
+
+[npc.params]
+"param.killcount_varp" = "varp.total_maggot_king_kills"
+
+[[enum]]
+isServerOnly = true
+id = "enum.dodian_bosses"
+keyType = "NPC"
+valueType = "INT"
+
+[enum.values]
+"npc.troll_champion" = 1
+"npc.ungadulu_good" = 1
+"npc.abyssal_pyramid" = 1
+"npc.san_tojalon" = 1
+"npc.black_knight_titan" = 1
+"npc.mm_demon" = 1
+"npc.slayer_nechryael" = 1
+"npc.ice_queen" = 1
+"npc.grandtree_blackdemon" = 1
+"npc.dagcave_magic_boss" = 1

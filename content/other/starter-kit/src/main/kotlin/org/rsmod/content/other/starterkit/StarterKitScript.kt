@@ -1,6 +1,6 @@
 package org.rsmod.content.other.starterkit
 
-import org.rsmod.api.enums.NamedEnums.dodian_starter_kit
+import org.rsmod.api.enums.DodianEnums.dodian_starter_kit
 import org.rsmod.api.invtx.invAdd
 import org.rsmod.api.player.vars.boolVarBit
 import org.rsmod.api.script.onPlayerLogin
