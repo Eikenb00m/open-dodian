@@ -31,3 +31,8 @@ id = "varbit.dodian_poll_answer_4"
 varp = "varp.dodian_poll_answers"
 startBit = 12
 endBit = 15
+
+[[varp]]
+id = "varp.dodian_poll_viewing"
+scope = "Temp"
+transmit = "Never"
