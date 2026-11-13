@@ -1,6 +1,7 @@
 [gamevals.varp]
 dodian_poll_voted = 64412
 dodian_poll_answers = 64413
+dodian_poll_viewing = 64414
 
 [gamevals.varbit]
 dodian_poll_answer_1 = 64407

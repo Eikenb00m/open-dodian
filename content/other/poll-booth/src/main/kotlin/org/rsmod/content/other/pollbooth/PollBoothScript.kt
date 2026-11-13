@@ -3,38 +3,46 @@ package org.rsmod.content.other.pollbooth
 import dev.openrune.definition.type.widget.IfEvent
 import dev.openrune.rscm.RSCM.asRSCM
 import dev.openrune.rscm.RSCMType
+import jakarta.inject.Inject
 import java.time.LocalDate
+import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
 import org.rsmod.api.player.ui.IfScriptArgs
-import org.rsmod.api.player.vars.intVarBit
-import org.rsmod.api.player.vars.intVarp
 import org.rsmod.api.player.ui.ifSetEvents
+import org.rsmod.api.player.vars.intVarBit
 import org.rsmod.api.script.onIfOpen
 import org.rsmod.api.script.onIfOverlayButton
 import org.rsmod.api.script.onIfScriptTrigger
 import org.rsmod.api.script.onOpLoc1
 import org.rsmod.api.script.onPlayerLogin
+import org.rsmod.api.script.onPlayerLogout
 import org.rsmod.game.entity.Player
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
 
-private var Player.votedPoll: Int by intVarp("varp.dodian_poll_voted")
 private var Player.shouldVote: Int by intVarBit("varbit.poll_playershouldvote")
 
 /**
  * The poll booths at the banks, driving Jagex's `ballot` interface: a poll list per year, the
  * overview with results and the voting page. The client builds every page from clientscripts the
- * server runs and reports clicks back through if-script triggers.
+ * server runs and reports clicks back through if-script triggers. Polls come from the database
+ * through [PollRepository].
  */
-class PollBoothScript : PluginScript() {
-    private val poll = SAMPLE_POLL
-    private val tallies = poll.questions.map { IntArray(it.options.size) }
-
+internal class PollBoothScript @Inject constructor(private val polls: PollRepository) :
+    PluginScript() {
     override fun ScriptContext.startup() {
+        polls.refresh()
         for (booth in BOOTHS) {
             onOpLoc1(booth) { openBooth() }
         }
-        onPlayerLogin { player.shouldVote = if (player.votedPoll == poll.id) 0 else 1 }
+        onPlayerLogin {
+            polls.loadVotes(player) {
+                if (player.isSlotAssigned) {
+                    player.shouldVote = if (polls.hasUnvotedOpenPoll(player)) 1 else 0
+                }
+            }
+        }
+        onPlayerLogout { polls.forget(player) }
         onIfOverlayButton("component.ballot:close") { ifCloseSub(INTERFACE) }
         onIfOpen(INTERFACE) {
             for (trigger in TRIGGERS) {
@@ -43,42 +51,62 @@ class PollBoothScript : PluginScript() {
         }
 
         onIfScriptTrigger<IntArg>("component.ballot:list_years_content") { showList(it.value) }
-        onIfScriptTrigger<IntArg>("component.ballot:list") {
-            if (it.value == poll.id) showOverview()
+        onIfScriptTrigger<IntArg>("component.ballot:list") { args ->
+            polls.poll(args.value)?.let { showOverview(it, fresh = true) }
         }
         onIfScriptTrigger<FilterArgs>("component.ballot:list_filters") { toggleFilter(it) }
-        onIfScriptTrigger<NoArgs>("component.ballot:exit_overview") { showList(currentYear()) }
+        onIfScriptTrigger<NoArgs>("component.ballot:exit_overview") {
+            showList(viewedPoll()?.year ?: currentYear())
+        }
         onIfScriptTrigger<IntArg>("component.ballot:frame") {
+            val poll = viewedPoll() ?: return@onIfScriptTrigger
             when (it.value) {
-                FRAME_VOTE -> showVoting()
-                FRAME_SUBMIT -> submit()
+                FRAME_VOTE -> showVoting(poll)
+                FRAME_SUBMIT -> submit(poll)
             }
         }
         onIfScriptTrigger<ChoiceArgs>("component.ballot:single_choice") {
-            selectChoice(it.question, it.choice)
+            viewedPoll()?.let { poll -> selectChoice(poll, it.question, it.choice) }
         }
     }
 
     private fun ProtectedAccess.openBooth() {
+        polls.refreshIfStale()
         ifOpenOverlay(INTERFACE)
-        showList(currentYear())
+        showList(polls.polls.firstOrNull()?.year ?: currentYear())
     }
 
+    private fun ProtectedAccess.viewedPoll(): Poll? = polls.poll(vars[VIEWING])
+
     private fun ProtectedAccess.showList(year: Int) {
-        val polls = if (year == currentYear()) listOf(poll) else emptyList()
-        val voted = player.votedPoll == poll.id
-        val status = if (voted) STATUS_HAS_VOTED else STATUS_CAN_VOTE
-        val subtitle = if (voted) "Open - you have voted" else "Open - you may vote"
+        val shown = polls.polls.filter { it.year == year }
+        val years = polls.polls.map { it.year } + currentYear()
+        val yearMask =
+            years.filter { it - FIRST_POLL_YEAR in 0..30 }.fold(0) { mask, y -> mask or (1 shl (y - FIRST_POLL_YEAR)) }
         runClientScript(
             script("clientscript.ballot_list_build"),
             year,
-            1 shl (currentYear() - FIRST_POLL_YEAR),
-            polls.map { it.title }.toTypedArray(),
-            polls.map { subtitle }.toTypedArray(),
-            polls.map { it.id }.toIntArray(),
-            polls.map { CATEGORY_OPINION or (status shl 8) }.toIntArray(),
+            yearMask,
+            shown.map { it.title }.toTypedArray(),
+            shown.map { subtitle(it) }.toTypedArray(),
+            shown.map { it.id }.toIntArray(),
+            shown.map { CATEGORY_OPINION or (listStatus(it) shl 8) }.toIntArray(),
         )
     }
+
+    private fun ProtectedAccess.subtitle(poll: Poll): String =
+        when {
+            !poll.open -> "Closed"
+            polls.hasVoted(player, poll.id) -> "Open - you have voted"
+            else -> "Open - you may vote"
+        }
+
+    private fun ProtectedAccess.listStatus(poll: Poll): Int =
+        when {
+            !poll.open -> STATUS_NOT_OPEN
+            polls.hasVoted(player, poll.id) -> STATUS_HAS_VOTED
+            else -> STATUS_CAN_VOTE
+        }
 
     private fun ProtectedAccess.toggleFilter(args: FilterArgs) {
         val varbit = if (args.category == 1) FILTER_CATEGORIES else FILTER_STATUSES
@@ -86,29 +114,36 @@ class PollBoothScript : PluginScript() {
         vars[varbit] = if (args.hidden == 1) vars[varbit] or bit else vars[varbit] and bit.inv()
     }
 
-    private fun ProtectedAccess.showOverview() {
-        val voted = player.votedPoll == poll.id
+    private fun ProtectedAccess.showOverview(poll: Poll, fresh: Boolean = false) {
+        if (fresh && vars[VIEWING] != poll.id) {
+            vars[VIEWING] = poll.id
+            for (answer in ANSWERS) {
+                vars[answer] = 0
+            }
+        }
+        val voted = polls.hasVoted(player, poll.id)
+        val showResults = voted || !poll.open
         vars[VOTE_PAGE_ACTIVE] = 0
         vars[VOTE_STATUS] =
             when {
                 voted -> VOTE_STATUS_VOTED
-                hasAnyAnswer() -> VOTE_STATUS_UNSUBMITTED
+                poll.open && hasAnyAnswer(poll) -> VOTE_STATUS_UNSUBMITTED
                 else -> VOTE_STATUS_NOT_VOTED
             }
         runClientScript(script("clientscript.ballot_overview_build_start"), poll.title)
         runClientScript(script("clientscript.ballot_overview_intro_open"), CATEGORY_OPINION, -1, "")
-        addDescription()
+        addDescription(poll)
         for ((index, question) in poll.questions.withIndex()) {
             runClientScript(script("clientscript.ballot_add_question"), index, index, 0, question.text)
-            val votes = tallies[index]
+            val votes = question.votes
             val total = votes.sum()
             val permille = IntArray(votes.size) { if (total == 0) 0 else votes[it] * 1000 / total }
             runClientScript(
                 script("clientscript.ballot_overview_build_single_choice"),
                 index,
-                if (voted) 1 else 0,
+                if (showResults) 1 else 0,
                 -1,
-                if (voted) answer(index) else -1,
+                if (voted) answer(poll, index) else -1,
                 0,
                 -1,
                 question.options.toTypedArray(),
@@ -119,22 +154,23 @@ class PollBoothScript : PluginScript() {
         runClientScript(script("clientscript.ballot_overview_build_end"))
     }
 
-    private fun ProtectedAccess.showVoting() {
-        if (player.votedPoll == poll.id) {
-            showOverview()
+    private fun ProtectedAccess.showVoting(poll: Poll) {
+        if (!poll.open || polls.hasVoted(player, poll.id)) {
+            if (!poll.open) mes("This poll is closed.")
+            showOverview(poll)
             return
         }
         vars[VOTE_PAGE_ACTIVE] = 1
-        vars[VOTE_STATUS] = if (hasAnyAnswer()) VOTE_STATUS_UNSUBMITTED else VOTE_STATUS_VOTING
+        vars[VOTE_STATUS] = if (hasAnyAnswer(poll)) VOTE_STATUS_UNSUBMITTED else VOTE_STATUS_VOTING
         runClientScript(script("clientscript.ballot_voting_build_start"), poll.title)
-        addDescription()
+        addDescription(poll)
         for ((index, question) in poll.questions.withIndex()) {
             runClientScript(script("clientscript.ballot_add_question"), index, index, 0, question.text)
             runClientScript(
                 script("clientscript.ballot_voting_build_single_choice"),
                 index,
                 0,
-                answer(index),
+                answer(poll, index),
                 0,
                 0,
                 0,
@@ -145,16 +181,16 @@ class PollBoothScript : PluginScript() {
         runClientScript(script("clientscript.ballot_voting_build_end"))
     }
 
-    private fun ProtectedAccess.addDescription() {
+    private fun ProtectedAccess.addDescription(poll: Poll) {
         runClientScript(script("clientscript.ballot_add_text"), -1, 0, 0, 0, 0, poll.description, "", "")
     }
 
-    private fun ProtectedAccess.selectChoice(question: Int, choice: Int) {
-        if (player.votedPoll == poll.id || vars[VOTE_PAGE_ACTIVE] != 1) {
+    private fun ProtectedAccess.selectChoice(poll: Poll, question: Int, choice: Int) {
+        if (!poll.open || polls.hasVoted(player, poll.id) || vars[VOTE_PAGE_ACTIVE] != 1) {
             return
         }
         val options = poll.questions.getOrNull(question)?.options ?: return
-        if (choice !in options.indices) {
+        if (choice !in options.indices || question !in ANSWERS.indices) {
             return
         }
         vars[ANSWERS[question]] = choice + 1
@@ -163,11 +199,11 @@ class PollBoothScript : PluginScript() {
         runClientScript(script("clientscript.ballot_voting_question_error"), -1, 0, "")
     }
 
-    private fun ProtectedAccess.submit() {
-        if (player.votedPoll == poll.id || vars[VOTE_PAGE_ACTIVE] != 1) {
+    private fun ProtectedAccess.submit(poll: Poll) {
+        if (!poll.open || polls.hasVoted(player, poll.id) || vars[VOTE_PAGE_ACTIVE] != 1) {
             return
         }
-        val unanswered = poll.questions.indices.firstOrNull { answer(it) == -1 }
+        val unanswered = poll.questions.indices.firstOrNull { answer(poll, it) == -1 }
         if (unanswered != null) {
             runClientScript(
                 script("clientscript.ballot_voting_question_error"),
@@ -177,22 +213,29 @@ class PollBoothScript : PluginScript() {
             )
             return
         }
-        for (index in poll.questions.indices) {
-            tallies[index][answer(index)]++
+        val answers = poll.questions.indices.map { answer(poll, it) }
+        val voter = player
+        polls.vote(voter, poll, answers) { result ->
+            when (result) {
+                VoteResult.Recorded -> voter.mes("Thank you, your vote has been recorded.")
+                VoteResult.AlreadyVoted -> voter.mes("You have already voted in this poll.")
+                VoteResult.Failed -> voter.mes("Your vote could not be saved. Please try again later.")
+            }
+            if (voter.isSlotAssigned) {
+                voter.shouldVote = if (polls.hasUnvotedOpenPoll(voter)) 1 else 0
+            }
         }
-        player.votedPoll = poll.id
-        player.shouldVote = 0
-        mes("Thank you, your vote has been recorded.")
-        showOverview()
+        showOverview(poll)
     }
 
-    private fun ProtectedAccess.answer(question: Int): Int {
+    private fun ProtectedAccess.answer(poll: Poll, question: Int): Int {
+        if (question !in ANSWERS.indices) return -1
         val choice = vars[ANSWERS[question]] - 1
         return if (choice in poll.questions[question].options.indices) choice else -1
     }
 
-    private fun ProtectedAccess.hasAnyAnswer(): Boolean =
-        poll.questions.indices.any { answer(it) != -1 }
+    private fun ProtectedAccess.hasAnyAnswer(poll: Poll): Boolean =
+        poll.questions.indices.any { answer(poll, it) != -1 }
 
     private fun currentYear(): Int = LocalDate.now().year
 
@@ -208,6 +251,7 @@ class PollBoothScript : PluginScript() {
 
     private companion object {
         const val INTERFACE = "interface.ballot"
+        const val VIEWING = "varp.dodian_poll_viewing"
         const val VOTE_STATUS = "varbit.poll_vote_status"
         const val VOTE_PAGE_ACTIVE = "varbit.poll_vote_page_active"
         const val FILTER_CATEGORIES = "varbit.poll_filters_categories"
@@ -223,6 +267,9 @@ class PollBoothScript : PluginScript() {
 
         const val FIRST_POLL_YEAR = 2013
         const val CATEGORY_OPINION = 2
+
+        // dbtable poll_filters: poll_status_notopen, _hasvoted, _ineligible, _canvote.
+        const val STATUS_NOT_OPEN = 0
         const val STATUS_HAS_VOTED = 1
         const val STATUS_CAN_VOTE = 3
 
