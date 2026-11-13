@@ -9,7 +9,7 @@ public object MapNpcListDecoder {
         var cursor = buf.newCursor()
 
         cursor = buf.readShort(cursor)
-        val count = cursor.value
+        val count = cursor.value and 0xFFFF
         if (count == 0) {
             return MapNpcListDefinition(IntLists.EMPTY_LIST)
         }
@@ -19,6 +19,21 @@ public object MapNpcListDecoder {
             cursor = buf.readInt(cursor)
             npcs.add(cursor.value)
         }
-        return MapNpcListDefinition(npcs)
+        if (!buf.isReadable(cursor)) {
+            return MapNpcListDefinition(npcs)
+        }
+
+        val extras = IntArrayList(IntArray(count) { MapNpcSpawnExtra.NONE.packed })
+        cursor = buf.readShort(cursor)
+        repeat(cursor.value and 0xFFFF) {
+            cursor = buf.readShort(cursor)
+            val index = cursor.value and 0xFFFF
+            cursor = buf.readUnsignedByte(cursor)
+            val direction = cursor.value
+            cursor = buf.readUnsignedByte(cursor)
+            val wanderRange = cursor.value
+            extras.set(index, (wanderRange shl 8) or direction)
+        }
+        return MapNpcListDefinition(npcs, extras)
     }
 }

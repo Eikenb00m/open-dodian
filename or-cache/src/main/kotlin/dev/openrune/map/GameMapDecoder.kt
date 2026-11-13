@@ -222,10 +222,15 @@ object GameMapDecoder {
         spawnSink: GameMapSpawnSink,
     ) {
         val base = square.toCoords(level = 0)
-        for (packed in npcs.packedSpawns.intIterator()) {
+        for ((index, packed) in npcs.packedSpawns.withIndex()) {
             val def = MapNpcDefinition(packed)
             val coords = base.translate(def.localX, def.localZ, def.level)
-            spawnSink.onNpcSpawn(def, coords)
+            val extra = npcs.extra(index)
+            if (extra.isNone) {
+                spawnSink.onNpcSpawn(def, coords)
+            } else {
+                spawnSink.onNpcSpawn(def, coords, extra)
+            }
         }
     }
 
