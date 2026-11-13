@@ -17,7 +17,8 @@ constructor(
         val split = text.split(" ")
         val command = split[0]
         val args = if (split.size > 1) split.subList(1, split.size).toList() else emptyList()
+        val rawArgs = message.command.split(" ").drop(1)
         centralActivityLogWriter.logCommand(player, command, args)
-        commands.execute(player, command, args)
+        commands.execute(player, command, args, rawArgs)
     }
 }

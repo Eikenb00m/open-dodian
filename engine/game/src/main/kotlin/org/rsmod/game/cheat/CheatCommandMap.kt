@@ -6,9 +6,14 @@ import org.rsmod.game.entity.Player
 public open class CheatCommandMap(
     public val commands: MutableMap<String, CheatHandler> = hashMapOf(),
 ) {
-    public fun execute(player: Player, command: String, args: List<String>): Boolean {
+    public fun execute(
+        player: Player,
+        command: String,
+        args: List<String>,
+        rawArgs: List<String> = args,
+    ): Boolean {
         val handler = this[command] ?: return false
-        val cheat = Cheat(player, command, args)
+        val cheat = Cheat(player, command, args, rawArgs)
         handler.action(cheat)
         return true
     }
