@@ -1,0 +1,16 @@
+# The items every new Dodian account starts with: obj to count.
+[[enum]]
+isServerOnly = true
+id = "enum.dodian_starter_kit"
+keyType = "OBJ"
+valueType = "INT"
+
+[enum.values]
+"obj.bronze_sword" = 1
+"obj.wooden_shield" = 1
+"obj.bronze_axe" = 1
+"obj.bronze_pickaxe" = 1
+"obj.tinderbox" = 1
+"obj.net" = 1
+"obj.coins" = 100
+"obj.bread" = 5

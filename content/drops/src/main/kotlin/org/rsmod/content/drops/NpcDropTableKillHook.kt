@@ -23,6 +23,7 @@ import org.rsmod.api.droptable.rollCount
 import org.rsmod.api.player.output.ClientScripts
 import org.rsmod.api.random.GameRandom
 import org.rsmod.api.repo.obj.ObjRepository
+import org.rsmod.api.repo.obj.ObjRepository.Companion.DEFAULT_REVEAL_DELAY
 import org.rsmod.content.interfaces.collectionlog.CollectionLog
 import org.rsmod.game.entity.Npc
 import org.rsmod.game.entity.Player
@@ -105,7 +106,7 @@ constructor(
             !receiveHooks.any { it.tryReceive(receiver, obj, count) } &&
                 !consumedByHook(obj, count, coords, duration, receiver)
         ) {
-            val spawned = objRepo.add(obj, coords, duration, receiver, count)
+            val spawned = objRepo.add(obj, coords, duration, receiver, count, revealDelay(obj))
             ClientScripts.lootTrackerAddLoot(receiver, npc.id, eventId, spawned.type, spawned.count)
         }
         for (bonus in drop.bonusDrops) {
@@ -126,5 +127,11 @@ constructor(
         val type = ServerCacheManager.getItem(obj.asRSCM(RSCMType.OBJ)) ?: return false
         val context = NpcDeathDropContext(receiver, type, coords, duration, objRepo)
         return deathDropHooks.any { it.tryConsume(context) }
+    }
+
+    /** Untradeable drops stay visible only to the player they dropped for. */
+    private fun revealDelay(obj: String): Int {
+        val type = ServerCacheManager.getItem(obj.asRSCM(RSCMType.OBJ))
+        return if (type != null && !type.tradeable) Int.MAX_VALUE else DEFAULT_REVEAL_DELAY
     }
 }

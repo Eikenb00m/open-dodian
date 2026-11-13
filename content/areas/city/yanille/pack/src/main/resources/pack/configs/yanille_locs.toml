@@ -37,3 +37,41 @@ option1 = "Close"
 [object.params]
 "param.next_loc_stage" = "loc.magicguild_door_r"
 "param.closesound" = "synth.nicedoor_close"
+
+# The large doors of the Yanille castle and the house east of the bank.
+
+[[object]]
+id = "loc.xbows_castle_door"
+inherit = "loc.xbows_castle_door"
+contentGroup = "content.closed_single_door"
+
+[object.params]
+"param.next_loc_stage" = "loc.xbowscastledoor_open"
+"param.opensound" = "synth.nicedoor_open"
+
+[[object]]
+id = "loc.xbowscastledoor_open"
+inherit = "loc.xbowscastledoor_open"
+contentGroup = "content.opened_single_door"
+option1 = "Close"
+
+[object.params]
+"param.next_loc_stage" = "loc.xbows_castle_door"
+"param.closesound" = "synth.nicedoor_close"
+
+# The door to the Yanille dungeon stairs, locked unless the player carries the red key.
+
+[[object]]
+id = "loc.yanille_dungeon_door"
+inherit = "loc.poshdoor"
+
+[[object]]
+id = "loc.yanille_dungeon_door_open"
+inherit = "loc.poshdooropen"
+
+# The red key that opens the dungeon door stays with whoever earned it.
+
+[[item]]
+id = "obj.redkey"
+inherit = "obj.redkey"
+tradeable = false
