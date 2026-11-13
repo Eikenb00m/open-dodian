@@ -1,0 +1,178 @@
+# Dodian teleports: free of runes, level and quest requirements, and no cast xp.
+
+[[item]]
+id = "obj.48_home_teleport"
+inherit = "obj.48_home_teleport"
+[item.params]
+"param.spell_name"="Yanille Home Teleport"
+"param.spell_desc"="Teleports you to Yanille. Requires no runes - recharge time 30 mins."
+"param.spell_levelreq"=0
+"param.spell_castxp"=0
+"param.spell_questreq_struct"=-1
+"param.spell_runetype_1"=-1
+"param.spell_runetype_2"=-1
+"param.spell_runetype_3"=-1
+"param.spell_runetype_4"=-1
+"param.spell_telecoord"=42699806
+
+[[item]]
+id = "obj.25_varrock_teleport"
+inherit = "obj.25_varrock_teleport"
+[item.params]
+"param.spell_name"="Seers' Village Teleport"
+"param.spell_desc"="Teleports you to Seers' Village"
+"param.spell_levelreq"=0
+"param.spell_castxp"=0
+"param.spell_questreq_struct"=-1
+"param.spell_runetype_1"=-1
+"param.spell_runetype_2"=-1
+"param.spell_runetype_3"=-1
+"param.spell_runetype_4"=-1
+"param.spell_telecoord"=44666269
+
+[[item]]
+id = "obj.31_lumbridge_teleport"
+inherit = "obj.31_lumbridge_teleport"
+[item.params]
+"param.spell_name"="Catherby Teleport"
+"param.spell_desc"="Teleports you to Catherby"
+"param.spell_levelreq"=0
+"param.spell_castxp"=0
+"param.spell_questreq_struct"=-1
+"param.spell_runetype_1"=-1
+"param.spell_runetype_2"=-1
+"param.spell_runetype_3"=-1
+"param.spell_runetype_4"=-1
+"param.spell_telecoord"=45944169
+
+[[item]]
+id = "obj.37_falador_teleport"
+inherit = "obj.37_falador_teleport"
+[item.params]
+"param.spell_name"="Taverley Teleport"
+"param.spell_desc"="Teleports you to Taverley"
+"param.spell_levelreq"=0
+"param.spell_castxp"=0
+"param.spell_questreq_struct"=-1
+"param.spell_runetype_1"=-1
+"param.spell_runetype_2"=-1
+"param.spell_runetype_3"=-1
+"param.spell_runetype_4"=-1
+"param.spell_telecoord"=47435126
+
+[[item]]
+id = "obj.67_house_teleport"
+inherit = "obj.67_house_teleport"
+[item.params]
+"param.spell_name"="Legends' Guild Teleport"
+"param.spell_desc"="Teleports you to the Legends' Guild"
+"param.spell_levelreq"=0
+"param.spell_castxp"=0
+"param.spell_questreq_struct"=-1
+"param.spell_runetype_1"=-1
+"param.spell_runetype_2"=-1
+"param.spell_runetype_3"=-1
+"param.spell_runetype_4"=-1
+"param.spell_telecoord"=44715283
+
+[[item]]
+id = "obj.45_camelot_teleport"
+inherit = "obj.45_camelot_teleport"
+[item.params]
+"param.spell_name"="Fishing Guild Teleport"
+"param.spell_desc"="Teleports you to the Fishing Guild"
+"param.spell_levelreq"=0
+"param.spell_castxp"=0
+"param.spell_questreq_struct"=-1
+"param.spell_runetype_1"=-1
+"param.spell_runetype_2"=-1
+"param.spell_runetype_3"=-1
+"param.spell_runetype_4"=-1
+"param.spell_telecoord"=42782015
+
+[[item]]
+id = "obj.51_ardougne_teleport"
+inherit = "obj.51_ardougne_teleport"
+[item.params]
+"param.spell_name"="Ardougne Teleport"
+"param.spell_desc"="Teleports you to Ardougne"
+"param.spell_levelreq"=0
+"param.spell_castxp"=0
+"param.spell_questreq_struct"=-1
+"param.spell_runetype_1"=-1
+"param.spell_runetype_2"=-1
+"param.spell_runetype_3"=-1
+"param.spell_runetype_4"=-1
+"param.spell_telecoord"=43617513
+
+# Not yet available on Dodian.
+
+[[item]]
+id = "obj.cert_deadman_level99_lamp"
+inherit = "obj.cert_deadman_level99_lamp"
+[item.params]
+"param.spell_name"="Dragon Dungeon Teleport"
+"param.spell_desc"="Coming soon"
+"param.spell_levelreq"=0
+"param.spell_castxp"=0
+"param.spell_questreq_struct"=-1
+"param.spell_runetype_1"=-1
+"param.spell_runetype_2"=-1
+"param.spell_runetype_3"=-1
+"param.spell_runetype_4"=-1
+
+[[item]]
+id = "obj.placeholder_blighted_sack_snare"
+inherit = "obj.placeholder_blighted_sack_snare"
+[item.params]
+"param.spell_name"="Civitas illa Fortis Teleport"
+"param.spell_desc"="Coming soon"
+"param.spell_levelreq"=0
+"param.spell_castxp"=0
+"param.spell_questreq_struct"=-1
+"param.spell_runetype_1"=-1
+"param.spell_runetype_2"=-1
+"param.spell_runetype_3"=-1
+"param.spell_runetype_4"=-1
+
+[[item]]
+id = "obj.58_watchtower_teleport"
+inherit = "obj.58_watchtower_teleport"
+[item.params]
+"param.spell_name"="Gnome Stronghold Teleport"
+"param.spell_desc"="Coming soon"
+"param.spell_levelreq"=0
+"param.spell_castxp"=0
+"param.spell_questreq_struct"=-1
+"param.spell_runetype_1"=-1
+"param.spell_runetype_2"=-1
+"param.spell_runetype_3"=-1
+"param.spell_runetype_4"=-1
+
+[[item]]
+id = "obj.61_trollheim_teleport"
+inherit = "obj.61_trollheim_teleport"
+[item.params]
+"param.spell_name"="Pandemonium Teleport"
+"param.spell_desc"="Coming soon"
+"param.spell_levelreq"=0
+"param.spell_castxp"=0
+"param.spell_questreq_struct"=-1
+"param.spell_runetype_1"=-1
+"param.spell_runetype_2"=-1
+"param.spell_runetype_3"=-1
+"param.spell_runetype_4"=-1
+
+[[item]]
+id = "obj.64_ape_atoll_teleport"
+inherit = "obj.64_ape_atoll_teleport"
+[item.params]
+"param.spell_name"="Woodcutting Guild Teleport"
+"param.spell_desc"="Coming soon"
+"param.spell_levelreq"=0
+"param.spell_castxp"=0
+"param.spell_questreq_struct"=-1
+"param.spell_runetype_1"=-1
+"param.spell_runetype_2"=-1
+"param.spell_runetype_3"=-1
+"param.spell_runetype_4"=-1

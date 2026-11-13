@@ -1,0 +1,39 @@
+# The Magic Guild doors open and close like any double door, with no Magic level requirement.
+
+[[object]]
+id = "loc.magicguild_door_l"
+inherit = "loc.magicguild_door_l"
+contentGroup = "content.closed_left_door"
+
+[object.params]
+"param.next_loc_stage" = "loc.magicguild_door_l_open"
+"param.opensound" = "synth.nicedoor_open"
+
+[[object]]
+id = "loc.magicguild_door_l_open"
+inherit = "loc.magicguild_door_l"
+contentGroup = "content.opened_left_door"
+option1 = "Close"
+
+[object.params]
+"param.next_loc_stage" = "loc.magicguild_door_l"
+"param.closesound" = "synth.nicedoor_close"
+
+[[object]]
+id = "loc.magicguild_door_r"
+inherit = "loc.magicguild_door_r"
+contentGroup = "content.closed_right_door"
+
+[object.params]
+"param.next_loc_stage" = "loc.magicguild_door_r_open"
+"param.opensound" = "synth.nicedoor_open"
+
+[[object]]
+id = "loc.magicguild_door_r_open"
+inherit = "loc.magicguild_door_r"
+contentGroup = "content.opened_right_door"
+option1 = "Close"
+
+[object.params]
+"param.next_loc_stage" = "loc.magicguild_door_r"
+"param.closesound" = "synth.nicedoor_close"

@@ -4,7 +4,6 @@ import dev.openrune.ServerCacheManager
 import dev.openrune.rscm.RSCM
 import dev.openrune.rscm.RSCM.asRSCM
 import dev.openrune.rscm.RSCMType
-import dev.openrune.types.ItemServerType
 import dev.openrune.types.aconverted.interf.IfButtonOp
 import jakarta.inject.Inject
 import org.rsmod.api.area.checker.AreaChecker
@@ -12,8 +11,6 @@ import org.rsmod.api.combat.commons.magic.MagicSpell
 import org.rsmod.api.combat.manager.MagicRuneManager
 import org.rsmod.api.combat.manager.MagicRuneManager.Companion.isFailure
 import org.rsmod.api.config.refs.params
-import org.rsmod.api.invtx.invTransaction
-import org.rsmod.api.invtx.select
 import org.rsmod.api.player.hook.PlayerTeleportValidator
 import org.rsmod.api.player.hook.TeleportType
 import org.rsmod.api.player.output.ChatType
@@ -27,7 +24,6 @@ import org.rsmod.api.server.config.ServerConfig
 import org.rsmod.api.spells.MagicSpellRegistry
 import org.rsmod.api.utils.time.epochMinute
 import org.rsmod.content.quest.manager.QuestRequirements
-import org.rsmod.game.inv.isType
 import org.rsmod.map.CoordGrid
 import org.rsmod.plugin.scripts.PluginScript
 import org.rsmod.plugin.scripts.ScriptContext
@@ -69,6 +65,11 @@ constructor(
             return
         }
 
+        if (teleport.comingSoon) {
+            mes("This teleport is coming soon!")
+            return
+        }
+
         if (!teleport.canCast(this)) {
             return
         }
@@ -91,7 +92,7 @@ constructor(
             return
         }
 
-        if (!consumeRequirements(spell, teleport)) {
+        if (!consumeRequirements(spell)) {
             return
         }
 
@@ -112,7 +113,9 @@ constructor(
         telejump(landingSquare(CoordGrid(task.destination), task.teleport.landingRadius))
         val endAnim = task.teleport.style.endAnim
         if (endAnim != null) anim(endAnim) else resetAnim()
-        statAdvance("stat.magic", spell.castXp)
+        if (spell.castXp > 0) {
+            statAdvance("stat.magic", spell.castXp)
+        }
     }
 
     private fun ProtectedAccess.landingSquare(centre: CoordGrid, radius: Int): CoordGrid {
@@ -188,52 +191,11 @@ constructor(
         return false
     }
 
-    private fun ProtectedAccess.consumeRequirements(
-        spell: MagicSpell,
-        teleport: SpellTeleport,
-    ): Boolean {
-        val castSpell =
-            if (teleport == SpellTeleport.ApeAtoll) {
-                val banana = ServerCacheManager.getItem(Banana.asRSCM(RSCMType.OBJ)) ?: return false
-                val spellWithoutBanana = spell.copy(objReqs = spell.objReqs.withoutBananaReq())
-                if (!runes.canCastSpell(player, spellWithoutBanana)) {
-                    return false
-                }
-                if (!deleteBanana(banana)) {
-                    mes("You need a banana to cast this spell.")
-                    return false
-                }
-                spellWithoutBanana
-            } else {
-                spell
-            }
-
-        if (castSpell.objReqs.isEmpty()) {
-            return runes.canCastSpell(player, castSpell)
+    private fun ProtectedAccess.consumeRequirements(spell: MagicSpell): Boolean {
+        if (spell.objReqs.isEmpty()) {
+            return runes.canCastSpell(player, spell)
         }
-        return !runes.attemptCast(player, castSpell).isFailure()
-    }
-
-    private fun List<MagicSpell.ObjRequirement>.withoutBananaReq(): List<MagicSpell.ObjRequirement> {
-        return filterNot { RSCM.getReverseMapping(RSCMType.OBJ, it.obj.id).contains("banana") }
-    }
-
-    private fun ProtectedAccess.deleteBanana(banana: ItemServerType): Boolean {
-        val bananaSlot = inv.indexOfFirst { it.isType(banana) }
-        if (bananaSlot == -1) {
-            return false
-        }
-        val transaction =
-            player.invTransaction(inv, autoCommit = true) {
-                val targetInv = select(inv)
-                delete {
-                    from = targetInv
-                    obj = banana.id
-                    strictCount = 1
-                    strictSlot = bananaSlot
-                }
-            }
-        return transaction.success
+        return !runes.attemptCast(player, spell).isFailure()
     }
 
     private data class PendingSpellTeleport(
@@ -276,6 +238,7 @@ constructor(
         val style: TeleportStyle = TeleportStyle.Standard,
         val landingRadius: Int = LandingRadius,
         val homeTeleport: Boolean = false,
+        val comingSoon: Boolean = false,
     ) {
         Home(
             "obj.48_home_teleport",
@@ -283,61 +246,25 @@ constructor(
             landingRadius = 1,
             homeTeleport = true,
         ),
-        Varrock(
-            "obj.25_varrock_teleport",
-            alternate = TeleportOption(destination = CoordGrid(3163, 3478, 0)),
-        ),
-        Lumbridge(
-            "obj.31_lumbridge_teleport",
-        ),
-        Falador(
-            "obj.37_falador_teleport",
-        ),
-        TeleportToHouse(
-            "obj.67_house_teleport",
-            alternate =
-                TeleportOption(
-                    missingDestinationMessage =
-                        "You need to purchase a house before you can teleport outside it."
-                ),
-            missingDestinationMessage = "You need to purchase a house before you can use this spell.",
-        ),
-        Camelot(
-            "obj.45_camelot_teleport",
-            alternate = TeleportOption(destination = CoordGrid(2726, 3484, 0)),
-        ),
-        KourendCastle(
+        SeersVillage("obj.25_varrock_teleport", CoordGrid(2726, 3485, 0)),
+        Catherby("obj.31_lumbridge_teleport", CoordGrid(2804, 3433, 0)),
+        Taverley("obj.37_falador_teleport", CoordGrid(2895, 3446, 0)),
+        LegendsGuild("obj.67_house_teleport", CoordGrid(2729, 3347, 0)),
+        FishingGuild("obj.45_camelot_teleport", CoordGrid(2611, 3391, 0)),
+        Ardougne("obj.51_ardougne_teleport", CoordGrid(2662, 3305, 0)),
+        DragonDungeon(
             // Cache name is wrong, but its spell params match Kourend Castle Teleport.
             "obj.cert_deadman_level99_lamp",
-            requiredQuest = "quest_clientofkourend",
-            lockedMessage = "You need to complete Client of Kourend to cast this spell.",
-        ),
-        Ardougne(
-            "obj.51_ardougne_teleport",
-            requiredQuest = "quest_plaguecity",
-            lockedMessage = "You need to complete Plague City to cast this spell.",
+            comingSoon = true,
         ),
         CivitasIllaFortis(
             // Cache name is wrong, but its spell params match Civitas illa Fortis Teleport.
             "obj.placeholder_blighted_sack_snare",
-            requiredQuest = "quest_twilightspromise",
-            lockedMessage = "You need to complete Twilight's Promise to cast this spell.",
+            comingSoon = true,
         ),
-        Watchtower(
-            "obj.58_watchtower_teleport",
-            alternate = TeleportOption(destination = CoordGrid(2544, 3095, 0)),
-            requiredQuest = "quest_watchtowerquest",
-            lockedMessage = "You need to complete Watchtower to cast this spell.",
-        ),
-        Trollheim(
-            "obj.61_trollheim_teleport",
-            requiredQuest = "quest_eadgarsruse",
-            lockedMessage = "You need to complete Eadgar's Ruse to cast this spell.",
-        ),
-        ApeAtoll(
-            "obj.64_ape_atoll_teleport",
-            destinationLevel = 1,
-        ),
+        GnomeStronghold("obj.58_watchtower_teleport", comingSoon = true),
+        Pandemonium("obj.61_trollheim_teleport", comingSoon = true),
+        WoodcuttingGuild("obj.64_ape_atoll_teleport", comingSoon = true),
         TeleportBoatToMe(
             "obj.56_teleport_boat_to_me",
             requiredQuest = "quest_pandemonium",
@@ -485,7 +412,6 @@ constructor(
     }
 
     private companion object {
-        private const val Banana = "obj.banana"
         private const val TeleportQueue = "queue.spell_teleport"
         private const val TeleportSound = "synth.teleport_all"
         private const val TeleportDelay = 4

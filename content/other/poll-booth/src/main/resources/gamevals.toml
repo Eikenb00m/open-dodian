@@ -1,0 +1,23 @@
+[gamevals.varp]
+dodian_poll_voted = 64412
+dodian_poll_answers = 64413
+
+[gamevals.varbit]
+dodian_poll_answer_1 = 64407
+dodian_poll_answer_2 = 64408
+dodian_poll_answer_3 = 64409
+dodian_poll_answer_4 = 64410
+
+[gamevals.clientscript]
+ballot_list_build = 8325
+ballot_overview_build_start = 8332
+ballot_overview_build_end = 8333
+ballot_overview_intro_open = 8335
+ballot_overview_build_single_choice = 8342
+ballot_add_text = 8374
+ballot_add_question = 8383
+ballot_voting_build_start = 8399
+ballot_voting_build_end = 8400
+ballot_voting_question_error = 8402
+ballot_voting_build_single_choice = 8404
+ballot_voting_single_choice_select = 8412

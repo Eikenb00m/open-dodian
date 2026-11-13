@@ -1,0 +1,33 @@
+[[varp]]
+id = "varp.dodian_poll_voted"
+scope = "Perm"
+transmit = "Never"
+
+[[varp]]
+id = "varp.dodian_poll_answers"
+scope = "Temp"
+transmit = "Never"
+
+[[varbit]]
+id = "varbit.dodian_poll_answer_1"
+varp = "varp.dodian_poll_answers"
+startBit = 0
+endBit = 3
+
+[[varbit]]
+id = "varbit.dodian_poll_answer_2"
+varp = "varp.dodian_poll_answers"
+startBit = 4
+endBit = 7
+
+[[varbit]]
+id = "varbit.dodian_poll_answer_3"
+varp = "varp.dodian_poll_answers"
+startBit = 8
+endBit = 11
+
+[[varbit]]
+id = "varbit.dodian_poll_answer_4"
+varp = "varp.dodian_poll_answers"
+startBit = 12
+endBit = 15
