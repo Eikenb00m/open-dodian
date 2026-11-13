@@ -20,6 +20,7 @@ import org.rsmod.api.player.output.ChatType
 import org.rsmod.api.player.output.clearMapFlag
 import org.rsmod.api.player.output.mes
 import org.rsmod.api.player.protect.ProtectedAccess
+import org.rsmod.api.realm.Realm
 import org.rsmod.api.script.onIfOverlayButton
 import org.rsmod.api.script.onPlayerQueueWithArgs
 import org.rsmod.api.server.config.ServerConfig
@@ -39,6 +40,7 @@ constructor(
     private val teleportValidator: PlayerTeleportValidator,
     private val areaChecker: AreaChecker,
     private val config: ServerConfig,
+    private val realm: Realm,
 ) : PluginScript() {
     override fun ScriptContext.startup() {
         for (teleport in SpellTeleport.entries) {
@@ -72,7 +74,9 @@ constructor(
         }
 
         val option = teleport.option(op)
-        val destination = teleport.destination(spell, option)
+        val destination =
+            if (teleport == SpellTeleport.Home) realm.config.respawnCoord
+            else teleport.destination(spell, option)
         if (destination == null) {
             mes(option.missingDestinationMessage)
             return

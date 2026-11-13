@@ -15,6 +15,7 @@ dependencies {
     implementation(projects.api.mechanics.toxins)
     implementation(projects.api.npc)
     implementation(projects.api.player)
+    implementation(projects.api.realm)
     implementation(projects.api.playerOutput)
     implementation(projects.api.repo)
     implementation(projects.api.route)

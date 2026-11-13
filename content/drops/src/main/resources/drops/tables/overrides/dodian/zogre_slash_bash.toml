@@ -1,0 +1,8 @@
+id = "Slash Bash Dodian Drops"
+npcs = ["npc.zogre_slash_bash"]
+
+[[guaranteed]]
+obj = "obj.big_bones"
+count = 1
+
+# Converted from Dodian uber3_drops for npc id 882 (Slash Bash).

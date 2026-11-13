@@ -1,0 +1,65 @@
+## Dwarven Mine
+
+[[spawn]]
+npc = "npc.mmsnailround_blue"
+coords = "0_46_150_41_38"
+
+[[spawn]]
+npc = "npc.mmsnailround_blue"
+coords = "0_46_150_43_40"
+
+[[spawn]]
+npc = "npc.mmsnailround_blue"
+coords = "0_46_150_44_37"
+
+[[spawn]]
+npc = "npc.mmsnailround_blue"
+coords = "0_46_150_45_34"
+
+[[spawn]]
+npc = "npc.mmsnailround_red+black"
+coords = "0_46_150_18_33"
+
+[[spawn]]
+npc = "npc.mmsnailround_red+black"
+coords = "0_46_150_18_35"
+
+[[spawn]]
+npc = "npc.mmsnailround_swamp"
+coords = "0_46_150_16_32"
+
+[[spawn]]
+npc = "npc.mmsnailround_swamp"
+coords = "0_46_150_18_33"
+
+[[spawn]]
+npc = "npc.mmsnailround_swamp"
+coords = "0_46_150_19_32"
+
+[[spawn]]
+npc = "npc.mmsnailround_swamp"
+coords = "0_46_150_19_35"
+
+[[spawn]]
+npc = "npc.mmsnailround_swamp"
+coords = "0_46_150_20_36"
+
+[[spawn]]
+npc = "npc.mmsnailround_yellow"
+coords = "0_46_150_40_39"
+
+[[spawn]]
+npc = "npc.mmsnailround_yellow"
+coords = "0_46_150_41_32"
+
+[[spawn]]
+npc = "npc.mmsnailround_yellow"
+coords = "0_46_150_41_33"
+
+[[spawn]]
+npc = "npc.mmsnailround_yellow"
+coords = "0_46_150_41_35"
+
+[[spawn]]
+npc = "npc.mmsnailround_yellow"
+coords = "0_46_150_44_40"

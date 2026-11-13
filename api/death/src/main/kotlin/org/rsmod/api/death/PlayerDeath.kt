@@ -50,7 +50,7 @@ constructor(
 
     private suspend fun ProtectedAccess.deathSequence() {
         val hooked = respawnPoint.hooked(player)
-        val respawn = hooked ?: PlayerRespawnPoint.DEFAULT
+        val respawn = hooked ?: respawnPoint.home
         val randomRespawn =
             if (hooked != null) null else mapFindSquareLineOfWalk(respawn, minRadius = 0, maxRadius = 2)
 

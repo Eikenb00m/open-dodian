@@ -1,0 +1,95 @@
+## Ice Queen's Lair
+
+[[spawn]]
+npc = "npc.ice_queen"
+coords = "0_44_155_49_33"
+
+[[spawn]]
+npc = "npc.icegiant"
+coords = "0_44_155_47_31"
+
+[[spawn]]
+npc = "npc.icegiant"
+coords = "0_44_155_48_17"
+
+[[spawn]]
+npc = "npc.icegiant"
+coords = "0_44_155_51_26"
+
+[[spawn]]
+npc = "npc.icegiant"
+coords = "0_44_155_52_20"
+
+[[spawn]]
+npc = "npc.icegiant"
+coords = "0_44_155_54_29"
+
+[[spawn]]
+npc = "npc.icegiant"
+coords = "0_44_155_55_18"
+
+## White Wolf Mountain
+
+[[spawn]]
+npc = "npc.giant"
+coords = "0_44_54_63_14"
+
+[[spawn]]
+npc = "npc.icewarrior_queen"
+coords = "0_44_54_16_56"
+
+[[spawn]]
+npc = "npc.icewarrior_queen"
+coords = "0_44_54_19_52"
+
+[[spawn]]
+npc = "npc.icewarrior_queen"
+coords = "0_44_54_21_50"
+
+[[spawn]]
+npc = "npc.icewarrior_queen"
+coords = "0_44_54_23_46"
+
+[[spawn]]
+npc = "npc.icewarrior_queen"
+coords = "0_44_54_26_48"
+
+[[spawn]]
+npc = "npc.icewarrior_queen"
+coords = "0_44_54_35_53"
+
+[[spawn]]
+npc = "npc.icewarrior_queen"
+coords = "0_44_54_39_54"
+
+[[spawn]]
+npc = "npc.wolf"
+coords = "0_44_54_23_47"
+
+[[spawn]]
+npc = "npc.wolf"
+coords = "0_44_54_24_10"
+
+[[spawn]]
+npc = "npc.wolf"
+coords = "0_44_54_26_34"
+
+[[spawn]]
+npc = "npc.wolf"
+coords = "0_44_54_27_8"
+
+[[spawn]]
+npc = "npc.wolf"
+coords = "0_44_54_30_3"
+
+[[spawn]]
+npc = "npc.wolf"
+coords = "0_44_54_30_34"
+
+[[spawn]]
+npc = "npc.wolf"
+coords = "0_44_54_30_41"
+
+[[spawn]]
+npc = "npc.wolf"
+coords = "0_44_54_32_22"

@@ -1,0 +1,50 @@
+id = "Chaos dwarf Dodian Drops"
+npcs = ["npc.dwarf_chaos"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[[guaranteed]]
+obj = "obj.coins"
+count = "4000..6000"
+
+[main]
+total = 100000
+name = "Chaos dwarf Dodian Drops"
+
+[[main.entries]]
+weight = 20000
+obj = "obj.uncut_emerald"
+count = "1..2"
+
+[[main.entries]]
+weight = 15000
+obj = "obj.cert_coal"
+count = "14..28"
+
+[[main.entries]]
+weight = 3000
+obj = "obj.rune_pickaxe"
+count = 1
+
+[[main.entries]]
+weight = 20000
+obj = "obj.cert_iron_ore"
+count = "18..36"
+
+[[main.entries]]
+weight = 30000
+obj = "obj.uncut_sapphire"
+count = 1
+
+[[main.entries]]
+weight = 10000
+obj = "obj.uncut_ruby"
+count = 1
+
+[[main.entries]]
+weight = 2000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 291 (Chaos dwarf).

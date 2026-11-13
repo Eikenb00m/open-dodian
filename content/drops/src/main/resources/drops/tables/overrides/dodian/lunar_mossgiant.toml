@@ -1,0 +1,50 @@
+id = "Moss giant Dodian Drops"
+npcs = ["npc.lunar_mossgiant"]
+
+[[guaranteed]]
+obj = "obj.big_bones"
+count = 1
+
+[[guaranteed]]
+obj = "obj.coins"
+count = "300..500"
+
+[main]
+total = 100000
+name = "Moss giant Dodian Drops"
+
+[[main.entries]]
+weight = 6000
+obj = "obj.adamant_platebody"
+count = 1
+
+[[main.entries]]
+weight = 10000
+obj = "obj.adamant_scimitar"
+count = 1
+
+[[main.entries]]
+weight = 6000
+obj = "obj.adamant_platelegs"
+count = 1
+
+[[main.entries]]
+weight = 6000
+obj = "obj.adamant_kiteshield"
+count = 1
+
+[[main.entries]]
+weight = 10000
+obj = "obj.adamant_2h_sword"
+count = 1
+
+[[main.entries]]
+weight = 6000
+obj = "obj.adamant_full_helm"
+count = 1
+
+[[main.entries]]
+weight = 56000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 3851 (Moss giant).

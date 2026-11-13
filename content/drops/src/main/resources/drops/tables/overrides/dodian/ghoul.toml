@@ -1,0 +1,36 @@
+id = "Ghoul Dodian Drops"
+npcs = ["npc.ghoul"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Ghoul Dodian Drops"
+
+[[main.entries]]
+weight = 2500
+obj = "obj.unidentified_dwarf_weed"
+count = 1
+
+[[main.entries]]
+weight = 2500
+obj = "obj.wine_of_zamorak"
+count = 1
+
+[[main.entries]]
+weight = 1500
+obj = "obj.uncut_emerald"
+count = 1
+
+[[main.entries]]
+weight = 5000
+obj = "obj.shiloshipticket"
+count = 1
+
+[[main.entries]]
+weight = 88500
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 289 (Ghoul).

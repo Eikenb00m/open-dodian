@@ -1,0 +1,49 @@
+## Fishing Guild
+
+[[spawn]]
+npc = "npc.0_40_53_memberfish"
+coords = "0_40_53_39_27"
+
+[[spawn]]
+npc = "npc.0_40_53_memberfish"
+coords = "0_40_53_42_22"
+
+[[spawn]]
+npc = "npc.0_40_53_rarefish"
+coords = "0_40_53_38_30"
+
+[[spawn]]
+npc = "npc.0_40_53_rarefish"
+coords = "0_40_53_42_27"
+
+[[spawn]]
+npc = "npc.0_43_51_saltfish"
+coords = "0_40_53_41_30"
+
+[[spawn]]
+npc = "npc.0_43_51_saltfish"
+coords = "0_40_53_44_25"
+
+[[spawn]]
+npc = "npc.0_43_51_saltfish"
+coords = "0_40_53_45_29"
+
+[[spawn]]
+npc = "npc.0_44_52_saltfish"
+coords = "0_40_53_38_33"
+
+[[spawn]]
+npc = "npc.banker1"
+coords = "0_40_53_24_29"
+
+[[spawn]]
+npc = "npc.gerrant"
+coords = "0_40_53_37_9"
+
+[[spawn]]
+npc = "npc.hundred_pirate"
+coords = "0_40_53_45_7"
+
+[[spawn]]
+npc = "npc.wgs_slayer_master_5_duradel"
+coords = "0_40_53_46_6"

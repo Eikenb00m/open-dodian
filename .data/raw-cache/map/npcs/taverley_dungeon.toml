@@ -1,0 +1,225 @@
+## Taverley Underground
+
+[[spawn]]
+npc = "npc.dagcave_magic_boss"
+coords = "0_45_151_27_63"
+
+[[spawn]]
+npc = "npc.dwarf_chaos"
+coords = "0_46_152_11_47"
+
+[[spawn]]
+npc = "npc.dwarf_chaos"
+coords = "0_46_152_17_52"
+
+[[spawn]]
+npc = "npc.dwarf_chaos"
+coords = "0_46_152_17_57"
+
+[[spawn]]
+npc = "npc.dwarf_chaos"
+coords = "0_46_152_22_47"
+
+[[spawn]]
+npc = "npc.dwarf_chaos"
+coords = "0_46_153_11_2"
+
+[[spawn]]
+npc = "npc.dwarf_chaos"
+coords = "0_46_153_22_2"
+
+[[spawn]]
+npc = "npc.grandtree_blackdemon"
+coords = "0_45_153_30_12"
+
+[[spawn]]
+npc = "npc.greater_demon"
+coords = "0_45_153_15_4"
+
+[[spawn]]
+npc = "npc.greater_demon"
+coords = "0_45_153_15_8"
+
+[[spawn]]
+npc = "npc.greater_demon"
+coords = "0_45_153_18_11"
+
+[[spawn]]
+npc = "npc.greater_demon"
+coords = "0_45_153_18_6"
+
+[[spawn]]
+npc = "npc.greater_demon"
+coords = "0_45_153_22_10"
+
+[[spawn]]
+npc = "npc.greater_demon"
+coords = "0_45_153_24_7"
+
+[[spawn]]
+npc = "npc.greater_demon"
+coords = "0_45_153_29_6"
+
+[[spawn]]
+npc = "npc.greater_demon"
+coords = "0_45_153_32_17"
+
+[[spawn]]
+npc = "npc.greater_demon"
+coords = "0_45_153_34_9"
+
+[[spawn]]
+npc = "npc.greater_demon"
+coords = "0_45_153_36_12"
+
+[[spawn]]
+npc = "npc.kolhuman"
+coords = "0_45_151_26_16"
+
+[[spawn]]
+npc = "npc.lesser_demon"
+coords = "0_45_152_39_29"
+
+[[spawn]]
+npc = "npc.lesser_demon"
+coords = "0_45_152_45_35"
+
+[[spawn]]
+npc = "npc.lesser_demon"
+coords = "0_45_153_48_12"
+
+[[spawn]]
+npc = "npc.lesser_demon"
+coords = "0_45_153_51_3"
+
+[[spawn]]
+npc = "npc.lesser_demon"
+coords = "0_45_153_53_18"
+
+[[spawn]]
+npc = "npc.lesser_demon"
+coords = "0_45_153_57_1"
+
+[[spawn]]
+npc = "npc.skeleton_hellhound"
+coords = "0_45_153_24_39"
+
+[[spawn]]
+npc = "npc.skeleton_hellhound"
+coords = "0_45_153_25_47"
+
+[[spawn]]
+npc = "npc.skeleton_hellhound"
+coords = "0_45_153_30_37"
+
+[[spawn]]
+npc = "npc.skeleton_hellhound"
+coords = "0_45_153_31_45"
+
+[[spawn]]
+npc = "npc.skeleton_hellhound"
+coords = "0_45_153_39_36"
+
+[[spawn]]
+npc = "npc.skeleton_hellhound"
+coords = "0_45_153_42_43"
+
+[[spawn]]
+npc = "npc.skeleton_hellhound"
+coords = "0_45_153_47_38"
+
+[[spawn]]
+npc = "npc.skeleton_hellhound"
+coords = "0_46_153_36_48"
+
+[[spawn]]
+npc = "npc.slayer_abyssal"
+coords = "0_44_152_51_55"
+
+[[spawn]]
+npc = "npc.slayer_abyssal"
+coords = "0_44_152_53_49"
+
+[[spawn]]
+npc = "npc.slayer_abyssal"
+coords = "0_44_152_54_47"
+
+[[spawn]]
+npc = "npc.slayer_abyssal"
+coords = "0_44_152_54_52"
+
+[[spawn]]
+npc = "npc.slayer_abyssal"
+coords = "0_44_152_54_56"
+
+[[spawn]]
+npc = "npc.slayer_abyssal"
+coords = "0_44_152_56_58"
+
+[[spawn]]
+npc = "npc.slayer_abyssal"
+coords = "0_44_152_57_49"
+
+[[spawn]]
+npc = "npc.slayer_abyssal"
+coords = "0_44_152_57_54"
+
+[[spawn]]
+npc = "npc.slayer_abyssal"
+coords = "0_44_152_59_46"
+
+[[spawn]]
+npc = "npc.slayer_abyssal"
+coords = "0_44_152_59_51"
+
+[[spawn]]
+npc = "npc.slayer_abyssal"
+coords = "0_44_152_59_56"
+
+[[spawn]]
+npc = "npc.slayer_abyssal"
+coords = "0_44_152_59_59"
+
+[[spawn]]
+npc = "npc.tzhaar_ket1"
+coords = "0_45_152_10_42"
+
+[[spawn]]
+npc = "npc.tzhaar_ket1"
+coords = "0_45_152_12_40"
+
+[[spawn]]
+npc = "npc.tzhaar_ket1"
+coords = "0_45_152_13_44"
+
+[[spawn]]
+npc = "npc.tzhaar_ket1"
+coords = "0_45_152_14_51"
+
+[[spawn]]
+npc = "npc.tzhaar_ket1"
+coords = "0_45_152_15_41"
+
+[[spawn]]
+npc = "npc.tzhaar_ket1"
+coords = "0_45_152_15_48"
+
+[[spawn]]
+npc = "npc.tzhaar_ket1"
+coords = "0_45_152_17_38"
+
+[[spawn]]
+npc = "npc.tzhaar_ket1"
+coords = "0_45_152_17_44"
+
+[[spawn]]
+npc = "npc.tzhaar_ket1"
+coords = "0_45_152_20_36"
+
+[[spawn]]
+npc = "npc.tzhaar_ket1"
+coords = "0_45_152_3_40"
+
+[[spawn]]
+npc = "npc.tzhaar_ket1"
+coords = "0_45_152_7_40"

@@ -1,0 +1,61 @@
+id = "Dagannoth Prime Dodian Drops"
+npcs = ["npc.dagcave_magic_boss"]
+
+[[guaranteed]]
+obj = "obj.dagannoth_king_bones"
+count = 1
+
+[main]
+total = 100000
+name = "Dagannoth Prime Dodian Drops"
+
+[[main.entries]]
+weight = 300
+obj = "obj.daganoth_cave_magic_shortbow"
+count = 1
+
+[[main.entries]]
+weight = 200
+obj = "obj.dagganoth_ranged_helm"
+count = 1
+
+[[main.entries]]
+weight = 200
+obj = "obj.dagganoth_ranged_body"
+count = 1
+
+[[main.entries]]
+weight = 200
+obj = "obj.dagganoth_ranged_legs"
+count = 1
+
+[[main.entries]]
+weight = 80000
+obj = "obj.coins"
+count = "2500..45000"
+
+[[main.entries]]
+weight = 5000
+obj = "obj.rune_plateskirt"
+count = 1
+
+[[main.entries]]
+weight = 200
+obj = "obj.dagganoth_range_feet"
+count = 1
+
+[[main.entries]]
+weight = 200
+obj = "obj.dagganoth_range_gloves"
+count = 1
+
+[[main.entries]]
+weight = 10000
+obj = "obj.rune_axe"
+count = 1
+
+[[main.entries]]
+weight = 3700
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 2266 (Dagannoth Prime).

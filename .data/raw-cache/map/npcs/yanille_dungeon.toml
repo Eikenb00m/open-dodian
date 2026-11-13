@@ -1,0 +1,105 @@
+## Yanille Dungeon
+
+[[spawn]]
+npc = "npc.black_knight_titan"
+coords = "0_40_148_4_35"
+
+[[spawn]]
+npc = "npc.firegiant_big"
+coords = "0_40_148_50_13"
+
+[[spawn]]
+npc = "npc.firegiant_big"
+coords = "0_40_148_51_11"
+
+[[spawn]]
+npc = "npc.firegiant_big"
+coords = "0_40_148_51_16"
+
+[[spawn]]
+npc = "npc.firegiant_big"
+coords = "0_40_148_54_16"
+
+[[spawn]]
+npc = "npc.firegiant_big"
+coords = "0_40_148_55_11"
+
+[[spawn]]
+npc = "npc.firegiant_big"
+coords = "0_40_148_56_14"
+
+[[spawn]]
+npc = "npc.ghoul"
+coords = "0_40_148_10_59"
+
+[[spawn]]
+npc = "npc.ghoul"
+coords = "0_40_148_12_54"
+
+[[spawn]]
+npc = "npc.ghoul"
+coords = "0_40_148_15_52"
+
+[[spawn]]
+npc = "npc.ghoul"
+coords = "0_40_148_15_55"
+
+[[spawn]]
+npc = "npc.ghoul"
+coords = "0_40_148_15_57"
+
+[[spawn]]
+npc = "npc.ghoul"
+coords = "0_40_148_18_51"
+
+[[spawn]]
+npc = "npc.ghoul"
+coords = "0_40_148_7_54"
+
+[[spawn]]
+npc = "npc.ghoul"
+coords = "0_40_148_9_56"
+
+[[spawn]]
+npc = "npc.ics_little_mummy_2"
+coords = "0_40_148_15_28"
+
+[[spawn]]
+npc = "npc.ics_little_mummy_2"
+coords = "0_40_148_17_26"
+
+[[spawn]]
+npc = "npc.ics_little_mummy_2"
+coords = "0_40_148_17_30"
+
+[[spawn]]
+npc = "npc.ics_little_mummy_2"
+coords = "0_40_148_19_28"
+
+[[spawn]]
+npc = "npc.ics_little_mummy_2"
+coords = "0_40_148_20_32"
+
+[[spawn]]
+npc = "npc.ics_little_mummy_2"
+coords = "0_40_148_21_26"
+
+[[spawn]]
+npc = "npc.ics_little_mummy_2"
+coords = "0_40_148_21_30"
+
+[[spawn]]
+npc = "npc.ics_little_mummy_2"
+coords = "0_40_148_23_28"
+
+[[spawn]]
+npc = "npc.ics_little_mummy_2"
+coords = "0_40_148_26_25"
+
+[[spawn]]
+npc = "npc.mm_demon"
+coords = "0_40_148_12_58"
+
+[[spawn]]
+npc = "npc.san_tojalon"
+coords = "0_40_148_54_50"

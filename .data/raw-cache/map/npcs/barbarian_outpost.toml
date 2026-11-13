@@ -1,0 +1,5 @@
+## Barbarian Outpost
+
+[[spawn]]
+npc = "npc.gnometrainer"
+coords = "0_39_55_51_34"

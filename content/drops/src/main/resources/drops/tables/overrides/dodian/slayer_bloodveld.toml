@@ -1,0 +1,61 @@
+id = "Bloodveld Dodian Drops"
+npcs = ["npc.slayer_bloodveld"]
+
+[[guaranteed]]
+obj = "obj.big_bones"
+count = 1
+
+[main]
+total = 100000
+name = "Bloodveld Dodian Drops"
+
+[[main.entries]]
+weight = 400
+obj = "obj.adamant_armoured_boots"
+count = 1
+
+[[main.entries]]
+weight = 3000
+obj = "obj.viking_helmet_slash"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.rune_scimitar"
+count = 1
+
+[[main.entries]]
+weight = 5000
+obj = "obj.cert_maple_logs"
+count = "17..37"
+
+[[main.entries]]
+weight = 5250
+obj = "obj.cert_lobster"
+count = "15..27"
+
+[[main.entries]]
+weight = 5250
+obj = "obj.cert_irit_leaf"
+count = "2..4"
+
+[[main.entries]]
+weight = 3000
+obj = "obj.rune_med_helm"
+count = 1
+
+[[main.entries]]
+weight = 3000
+obj = "obj.rune_sq_shield"
+count = 1
+
+[[main.entries]]
+weight = 5000
+obj = "obj.hundred_gauntlets_level_6"
+count = 1
+
+[[main.entries]]
+weight = 68100
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 484 (Bloodveld).

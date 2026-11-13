@@ -1,0 +1,57 @@
+## Seers' Village
+
+[[spawn]]
+npc = "npc.banker1"
+coords = "0_42_54_33_39"
+
+[[spawn]]
+npc = "npc.banker1"
+coords = "0_42_54_34_39"
+
+[[spawn]]
+npc = "npc.banker1"
+coords = "0_42_54_36_39"
+
+[[spawn]]
+npc = "npc.banker1"
+coords = "0_42_54_39_39"
+
+[[spawn]]
+npc = "npc.banker1"
+coords = "0_42_54_40_39"
+
+[[spawn]]
+npc = "npc.banker1"
+coords = "0_42_54_41_39"
+
+[[spawn]]
+npc = "npc.chicken"
+coords = "0_42_54_57_19"
+
+[[spawn]]
+npc = "npc.chicken"
+coords = "0_42_54_58_16"
+
+[[spawn]]
+npc = "npc.chicken"
+coords = "0_42_54_59_18"
+
+[[spawn]]
+npc = "npc.chicken"
+coords = "0_42_54_60_15"
+
+[[spawn]]
+npc = "npc.chicken"
+coords = "0_42_54_60_20"
+
+[[spawn]]
+npc = "npc.chicken"
+coords = "0_42_54_61_17"
+
+[[spawn]]
+npc = "npc.chicken"
+coords = "0_42_54_62_19"
+
+[[spawn]]
+npc = "npc.tanner"
+coords = "0_42_54_23_22"

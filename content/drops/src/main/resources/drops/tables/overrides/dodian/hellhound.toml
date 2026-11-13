@@ -1,0 +1,96 @@
+id = "Hellhound Dodian Drops"
+npcs = ["npc.hellhound"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Hellhound Dodian Drops"
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_kiteshield_zamorak"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_full_helm_zamorak"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_platelegs_zamorak"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_kiteshield_saradomin"
+count = 1
+
+[[main.entries]]
+weight = 5000
+obj = "obj.shiloshipticket"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_platebody_zamorak"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_platelegs_saradomin"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_platebody_saradomin"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_full_helm_saradomin"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_platebody_guthix"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_platelegs_guthix"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_full_helm_guthix"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_kiteshield_guthix"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_plateskirt_zamorak"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_plateskirt_saradomin"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_plateskirt_guthix"
+count = 1
+
+[[main.entries]]
+weight = 80000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 104 (Hellhound).

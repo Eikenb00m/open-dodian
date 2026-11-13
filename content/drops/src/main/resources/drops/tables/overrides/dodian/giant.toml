@@ -1,0 +1,31 @@
+id = "Hill giant Dodian Drops"
+npcs = ["npc.giant"]
+
+[[guaranteed]]
+obj = "obj.big_bones"
+count = 1
+
+[main]
+total = 100000
+name = "Hill giant Dodian Drops"
+
+[[main.entries]]
+weight = 25000
+obj = "obj.unidentified_guam"
+count = 1
+
+[[main.entries]]
+weight = 25000
+obj = "obj.limpwurt_root"
+count = 1
+
+[[main.entries]]
+weight = 25000
+obj = "obj.unidentified_tarromin"
+count = 1
+
+[[main.entries]]
+weight = 25000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 2098 (Hill giant).

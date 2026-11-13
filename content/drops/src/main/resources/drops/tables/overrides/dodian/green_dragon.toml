@@ -1,0 +1,30 @@
+id = "Green dragon Dodian Drops"
+npcs = ["npc.green_dragon"]
+
+[[guaranteed]]
+obj = "obj.dragon_bones"
+count = 1
+
+[[guaranteed]]
+obj = "obj.dragonhide_green"
+count = "1..3"
+
+[main]
+total = 100000
+name = "Green dragon Dodian Drops"
+
+[[main.entries]]
+weight = 2000
+obj = "obj.rune_dagger"
+count = 1
+
+[[main.entries]]
+weight = 5000
+obj = "obj.adamant_kiteshield"
+count = 1
+
+[[main.entries]]
+weight = 93000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 260 (Green dragon).

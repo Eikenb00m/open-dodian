@@ -1,0 +1,45 @@
+id = "Head Mourners Dodian Drops"
+npcs = ["npc.recruiter"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[[guaranteed]]
+obj = "obj.feather"
+count = "400..800"
+
+[main]
+total = 100000
+name = "Head Mourners Dodian Drops"
+
+[[main.entries]]
+weight = 2000
+obj = "obj.hundred_gauntlets_level_10"
+count = 1
+
+[[main.entries]]
+weight = 10000
+obj = "obj.adamant_pickaxe"
+count = 1
+
+[[main.entries]]
+weight = 8000
+obj = "obj.hundred_gauntlets_level_9"
+count = 1
+
+[[main.entries]]
+weight = 6000
+obj = "obj.dragon_battleaxe"
+count = 1
+
+[[main.entries]]
+weight = 4000
+obj = "obj.dragon_2h_sword"
+count = 1
+
+[[main.entries]]
+weight = 70000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 5311 (Head Mourners).

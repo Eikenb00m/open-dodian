@@ -1,0 +1,26 @@
+id = "Chicken Dodian Drops"
+npcs = ["npc.chicken"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Chicken Dodian Drops"
+
+[[main.entries]]
+weight = 10000
+obj = "obj.egg"
+count = 1
+
+[[main.entries]]
+weight = 75000
+obj = "obj.feather"
+count = "5..15"
+
+[[main.entries]]
+weight = 15000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 2692 (Chicken).

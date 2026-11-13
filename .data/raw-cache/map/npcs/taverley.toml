@@ -1,0 +1,109 @@
+## Taverley
+
+[[spawn]]
+npc = "npc.banker1"
+coords = "0_45_54_21_19"
+
+[[spawn]]
+npc = "npc.banker1"
+coords = "0_45_54_22_19"
+
+[[spawn]]
+npc = "npc.banker1"
+coords = "0_45_54_23_19"
+
+[[spawn]]
+npc = "npc.banker1"
+coords = "0_45_54_24_19"
+
+[[spawn]]
+npc = "npc.chaosmonk1"
+coords = "0_45_54_42_26"
+
+[[spawn]]
+npc = "npc.chaosmonk1"
+coords = "0_45_54_43_29"
+
+[[spawn]]
+npc = "npc.chaosmonk1"
+coords = "0_45_54_45_23"
+
+[[spawn]]
+npc = "npc.chaosmonk1"
+coords = "0_45_54_46_31"
+
+[[spawn]]
+npc = "npc.chaosmonk1"
+coords = "0_45_54_48_25"
+
+[[spawn]]
+npc = "npc.chaosmonk1"
+coords = "0_45_54_48_29"
+
+[[spawn]]
+npc = "npc.druid"
+coords = "0_45_53_11_30"
+
+[[spawn]]
+npc = "npc.druid"
+coords = "0_45_53_13_41"
+
+[[spawn]]
+npc = "npc.druid"
+coords = "0_45_53_17_50"
+
+[[spawn]]
+npc = "npc.druid"
+coords = "0_45_53_4_38"
+
+[[spawn]]
+npc = "npc.druid"
+coords = "0_45_53_5_30"
+
+[[spawn]]
+npc = "npc.druid"
+coords = "0_45_53_5_43"
+
+[[spawn]]
+npc = "npc.druid"
+coords = "0_45_53_7_37"
+
+[[spawn]]
+npc = "npc.druid"
+coords = "0_45_53_8_48"
+
+[[spawn]]
+npc = "npc.giant"
+coords = "0_45_54_2_5"
+
+[[spawn]]
+npc = "npc.giant"
+coords = "0_45_54_3_10"
+
+[[spawn]]
+npc = "npc.giant"
+coords = "0_45_54_3_17"
+
+[[spawn]]
+npc = "npc.giant"
+coords = "0_45_54_5_13"
+
+[[spawn]]
+npc = "npc.giant"
+coords = "0_45_54_6_18"
+
+[[spawn]]
+npc = "npc.giant"
+coords = "0_45_54_6_7"
+
+[[spawn]]
+npc = "npc.jatix"
+coords = "0_45_53_17_36"
+
+[[spawn]]
+npc = "npc.ungadulu_good"
+coords = "0_45_53_9_32"
+
+[[spawn]]
+npc = "npc.wgs_slayer_master_2_mazchna"
+coords = "0_45_53_5_58"

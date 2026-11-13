@@ -1,0 +1,75 @@
+id = "Black Demon Dodian Drops"
+npcs = ["npc.grandtree_blackdemon"]
+
+[[guaranteed]]
+obj = "obj.coins"
+count = "15000..25000"
+
+[[guaranteed]]
+obj = "obj.zogre_ancestral_bones_ourg"
+count = 1
+
+[main]
+total = 100000
+name = "Black Demon Dodian Drops"
+
+[[main.entries]]
+weight = 10000
+obj = "obj.cert_uncut_emerald"
+count = "14..28"
+
+[[main.entries]]
+weight = 16000
+obj = "obj.cert_limpwurt_root"
+count = "12..22"
+
+[[main.entries]]
+weight = 14000
+obj = "obj.cert_white_berries"
+count = "12..20"
+
+[[main.entries]]
+weight = 350
+obj = "obj.viking_helmet_magic"
+count = 1
+
+[[main.entries]]
+weight = 250
+obj = "obj.saradominbook_complete"
+count = 1
+
+[[main.entries]]
+weight = 350
+obj = "obj.zamorakbook_complete"
+count = 1
+
+[[main.entries]]
+weight = 350
+obj = "obj.guthixbook_complete"
+count = 1
+
+[[main.entries]]
+weight = 12000
+obj = "obj.cert_uncut_sapphire"
+count = "14..36"
+
+[[main.entries]]
+weight = 8000
+obj = "obj.cert_uncut_ruby"
+count = "14..20"
+
+[[main.entries]]
+weight = 15000
+obj = "obj.cert_gold_bar"
+count = 7
+
+[[main.entries]]
+weight = 18000
+obj = "obj.cert_eye_of_newt"
+count = "12..24"
+
+[[main.entries]]
+weight = 5700
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 1432 (Black Demon).

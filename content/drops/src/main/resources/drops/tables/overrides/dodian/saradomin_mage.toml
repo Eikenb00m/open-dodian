@@ -1,0 +1,32 @@
+id = "Battle mage Dodian Drops"
+npcs = ["npc.saradomin_mage"]
+
+[main]
+total = 100000
+name = "Battle mage Dodian Drops"
+
+[[main.entries]]
+weight = 2000
+obj = "obj.zamorak_cape"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.saradomin_cape"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.guthix_cape"
+count = 1
+
+[[main.entries]]
+weight = 20000
+obj = "obj.cert_blankrune"
+count = 10
+
+[[main.entries]]
+weight = 74000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 1611 (Battle mage).

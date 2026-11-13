@@ -1,0 +1,25 @@
+## Dig Site
+
+[[spawn]]
+npc = "npc.banker1"
+coords = "0_52_52_5_4"
+
+[[spawn]]
+npc = "npc.doorman"
+coords = "0_52_52_5_5"
+
+[[spawn]]
+npc = "npc.grab_postman"
+coords = "0_53_53_42_42"
+
+[[spawn]]
+npc = "npc.inferno_moving_safespot"
+coords = "0_52_52_1_9"
+
+[[spawn]]
+npc = "npc.partyroom_pete"
+coords = "0_52_52_6_6"
+
+[[spawn]]
+npc = "npc.zombie2_rural3"
+coords = "0_52_52_5_5"

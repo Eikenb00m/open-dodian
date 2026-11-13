@@ -1,0 +1,50 @@
+id = "Hero Dodian Drops"
+npcs = ["npc.hero"]
+
+[[guaranteed]]
+obj = "obj.coins"
+count = "300..600"
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Hero Dodian Drops"
+
+[[main.entries]]
+weight = 3000
+obj = "obj.rune_med_helm"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.rune_longsword"
+count = 1
+
+[[main.entries]]
+weight = 3000
+obj = "obj.rune_sq_shield"
+count = 1
+
+[[main.entries]]
+weight = 3000
+obj = "obj.rune_sword"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.rune_chainbody"
+count = 1
+
+[[main.entries]]
+weight = 3000
+obj = "obj.rune_mace"
+count = 1
+
+[[main.entries]]
+weight = 84000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 3106 (Hero).

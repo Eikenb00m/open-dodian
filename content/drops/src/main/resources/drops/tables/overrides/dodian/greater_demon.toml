@@ -1,0 +1,52 @@
+id = "Greater demon Dodian Drops"
+npcs = ["npc.greater_demon"]
+
+[[guaranteed]]
+obj = "obj.tbwt_jogre_bones"
+count = 1
+
+[main]
+total = 100000
+name = "Greater demon Dodian Drops"
+
+[[main.entries]]
+weight = 75
+obj = "obj.viking_helmet_magic"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.mystic_hat_dark"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.mystic_robe_bottom_dark"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.mystic_gloves_dark"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.mystic_boots_dark"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.mystic_robe_top_dark"
+count = 1
+
+[[main.entries]]
+weight = 80000
+obj = "obj.coins"
+count = "4500..9000"
+
+[[main.entries]]
+weight = 9925
+obj = "obj.cert_steel_bar"
+count = "17..34"
+
+# Converted from Dodian uber3_drops for npc id 2025 (Greater demon).

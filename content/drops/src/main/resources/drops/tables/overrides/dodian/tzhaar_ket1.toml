@@ -1,0 +1,41 @@
+id = "TzHaar-Ket Dodian Drops"
+npcs = ["npc.tzhaar_ket1"]
+
+[[guaranteed]]
+obj = "obj.coins"
+count = "1000..5000"
+
+[main]
+total = 100000
+name = "TzHaar-Ket Dodian Drops"
+
+[[main.entries]]
+weight = 400
+obj = "obj.tzhaar_maul"
+count = 1
+
+[[main.entries]]
+weight = 50
+obj = "obj.tzhaar_cape_obsidian"
+count = 1
+
+[[main.entries]]
+weight = 10
+obj = "obj.uncut_onyx"
+count = 1
+
+[[main.entries]]
+weight = 100
+obj = "obj.tzhaar_spikeshield"
+count = 1
+
+[[main.entries]]
+weight = 5000
+obj = "obj.cert_wine_of_zamorak"
+count = "1..2"
+
+[[main.entries]]
+weight = 94440
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 2173 (TzHaar-Ket).

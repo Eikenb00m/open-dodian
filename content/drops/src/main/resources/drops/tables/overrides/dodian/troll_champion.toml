@@ -1,0 +1,55 @@
+id = "Dad Dodian Drops"
+npcs = ["npc.troll_champion"]
+
+[[guaranteed]]
+obj = "obj.big_bones"
+count = 1
+
+[[guaranteed]]
+obj = "obj.coins"
+count = "1000..5000"
+
+[main]
+total = 100000
+name = "Dad Dodian Drops"
+
+[[main.entries]]
+weight = 2000
+obj = "obj.rune_2h_sword"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.rune_platebody"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.rune_platelegs"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.rune_full_helm"
+count = 1
+
+[[main.entries]]
+weight = 650
+obj = "obj.redkey"
+count = 1
+
+[[main.entries]]
+weight = 10000
+obj = "obj.cert_steel_bar"
+count = "5..10"
+
+[[main.entries]]
+weight = 15000
+obj = "obj.cert_coal"
+count = "5..15"
+
+[[main.entries]]
+weight = 66350
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 4130 (Dad).

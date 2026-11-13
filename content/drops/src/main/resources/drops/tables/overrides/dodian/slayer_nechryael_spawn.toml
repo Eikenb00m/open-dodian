@@ -1,0 +1,26 @@
+id = "Death spawn Dodian Drops"
+npcs = ["npc.slayer_nechryael_spawn"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Death spawn Dodian Drops"
+
+[[main.entries]]
+weight = 25000
+obj = "obj.unidentified_ranarr"
+count = "1..3"
+
+[[main.entries]]
+weight = 4000
+obj = "obj.rune_longsword"
+count = 1
+
+[[main.entries]]
+weight = 71000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 10 (Death spawn).

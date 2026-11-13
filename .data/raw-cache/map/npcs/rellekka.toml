@@ -1,0 +1,9 @@
+## Rellekka
+
+[[spawn]]
+npc = "npc.sos_death_ghost2_d"
+coords = "0_41_56_53_1"
+
+[[spawn]]
+npc = "npc.sos_death_ghost2_d"
+coords = "0_41_56_58_12"

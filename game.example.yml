@@ -1,6 +1,9 @@
 # Game values
 # You want to edit these to fit your game.
 name: "OpenRune"
+# Server banner (top of screen): "<server-name> <version> - N players online". server-name falls back to name.
+# server-name: "OpenRune"
+# version: "1.0"
 game-port: 43594
 revision: 242
 environment: "LIVE"

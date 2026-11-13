@@ -8,6 +8,7 @@ dependencies {
     implementation(projects.api.generated)
     implementation(projects.api.player)
     implementation(projects.api.pluginCommons)
+    implementation(projects.api.realm)
     implementation(projects.api.script)
     implementation(projects.api.spells)
     implementation(projects.api.spellsRunes)

@@ -1,0 +1,9 @@
+## Evil Bob's Island
+
+[[spawn]]
+npc = "npc.escaped_slave"
+coords = "0_39_74_30_42"
+
+[[spawn]]
+npc = "npc.macro_evil_bob_outside"
+coords = "0_39_74_28_40"

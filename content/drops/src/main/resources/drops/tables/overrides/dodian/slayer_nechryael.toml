@@ -1,0 +1,36 @@
+id = "Nechryael Dodian Drops"
+npcs = ["npc.slayer_nechryael"]
+
+[[guaranteed]]
+obj = "obj.coins"
+count = 10000
+
+[main]
+total = 100000
+name = "Nechryael Dodian Drops"
+
+[[main.entries]]
+weight = 500
+obj = "obj.granite_maul"
+count = 1
+
+[[main.entries]]
+weight = 250
+obj = "obj.dagganoth_mage_body"
+count = 1
+
+[[main.entries]]
+weight = 250
+obj = "obj.dagganoth_mage_legs"
+count = 1
+
+[[main.entries]]
+weight = 150
+obj = "obj.abyssal_whip"
+count = 1
+
+[[main.entries]]
+weight = 98850
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 8 (Nechryael).

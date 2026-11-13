@@ -1,0 +1,36 @@
+id = "Fire giant Dodian Drops"
+npcs = ["npc.firegiant_big"]
+
+[[guaranteed]]
+obj = "obj.tbwt_jogre_bones"
+count = 1
+
+[main]
+total = 100000
+name = "Fire giant Dodian Drops"
+
+[[main.entries]]
+weight = 3000
+obj = "obj.shiloshipticket"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.dragon_med_helm"
+count = 1
+
+[[main.entries]]
+weight = 3000
+obj = "obj.gauntlets_of_cooking"
+count = 1
+
+[[main.entries]]
+weight = 3000
+obj = "obj.desert_boots"
+count = 1
+
+[[main.entries]]
+weight = 89000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 2075 (Fire giant).

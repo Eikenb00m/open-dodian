@@ -1,0 +1,61 @@
+id = "Aberrant spectre Dodian Drops"
+npcs = ["npc.slayer_abberant_spectre_1"]
+
+[[guaranteed]]
+obj = "obj.big_bones"
+count = 1
+
+[main]
+total = 100000
+name = "Aberrant spectre Dodian Drops"
+
+[[main.entries]]
+weight = 700
+obj = "obj.mystic_hat_light"
+count = 1
+
+[[main.entries]]
+weight = 700
+obj = "obj.mystic_robe_top_light"
+count = 1
+
+[[main.entries]]
+weight = 700
+obj = "obj.mystic_robe_bottom_light"
+count = 1
+
+[[main.entries]]
+weight = 700
+obj = "obj.mystic_gloves_light"
+count = 1
+
+[[main.entries]]
+weight = 700
+obj = "obj.mystic_boots_light"
+count = 1
+
+[[main.entries]]
+weight = 5250
+obj = "obj.cert_swordfish"
+count = "15..27"
+
+[[main.entries]]
+weight = 300
+obj = "obj.staff_of_zaros"
+count = 1
+
+[[main.entries]]
+weight = 3000
+obj = "obj.bloodrune"
+count = "3..16"
+
+[[main.entries]]
+weight = 5000
+obj = "obj.cert_cadantine"
+count = "2..4"
+
+[[main.entries]]
+weight = 82950
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 2 (Aberrant spectre).

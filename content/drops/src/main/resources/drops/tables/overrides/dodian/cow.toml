@@ -1,0 +1,21 @@
+id = "Cow Dodian Drops"
+npcs = ["npc.cow"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Cow Dodian Drops"
+
+[[main.entries]]
+weight = 75000
+obj = "obj.cow_hide"
+count = "1..3"
+
+[[main.entries]]
+weight = 25000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 2805 (Cow).

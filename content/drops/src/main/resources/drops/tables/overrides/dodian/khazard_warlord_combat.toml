@@ -1,0 +1,17 @@
+id = "Khazard warlord Dodian Drops"
+npcs = ["npc.khazard_warlord_combat"]
+
+[main]
+total = 100000
+name = "Khazard warlord Dodian Drops"
+
+[[main.entries]]
+weight = 1000
+obj = "obj.twisted_bow"
+count = 1
+
+[[main.entries]]
+weight = 99000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 477 (Khazard warlord).

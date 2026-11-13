@@ -1,0 +1,41 @@
+id = "Shadow warrior Dodian Drops"
+npcs = ["npc.shadow_warrior"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Shadow warrior Dodian Drops"
+
+[[main.entries]]
+weight = 1500
+obj = "obj.mystic_hat"
+count = 1
+
+[[main.entries]]
+weight = 1500
+obj = "obj.mystic_robe_top"
+count = 1
+
+[[main.entries]]
+weight = 1500
+obj = "obj.mystic_robe_bottom"
+count = 1
+
+[[main.entries]]
+weight = 1500
+obj = "obj.mystic_gloves"
+count = 1
+
+[[main.entries]]
+weight = 1500
+obj = "obj.mystic_boots"
+count = 1
+
+[[main.entries]]
+weight = 92500
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 2853 (Shadow warrior).

@@ -93,6 +93,10 @@ public data class QuestRequirementsYaml(
 @JsonIgnoreProperties(ignoreUnknown = true)
 public data class ServerConfig(
     val name: String,
+    /** Name shown in the server banner at the top of the screen; falls back to [name]. */
+    @JsonProperty("server-name") val serverName: String? = null,
+    /** Version shown after [serverName] in the server banner. */
+    val version: String? = null,
     @JsonProperty("game-port") val gamePort: Int,
     val revision: Int,
     val environment: String,
