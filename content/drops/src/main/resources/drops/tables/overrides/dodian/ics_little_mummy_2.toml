@@ -1,0 +1,41 @@
+id = "Mummy Dodian Drops"
+npcs = ["npc.ics_little_mummy_2"]
+
+[[guaranteed]]
+obj = "obj.big_bones"
+count = 1
+
+[main]
+total = 100000
+name = "Mummy Dodian Drops"
+
+[[main.entries]]
+weight = 4000
+obj = "obj.shiloshipticket"
+count = 1
+
+[[main.entries]]
+weight = 20000
+obj = "obj.unidentified_kwuarm"
+count = 1
+
+[[main.entries]]
+weight = 25000
+obj = "obj.limpwurt_root"
+count = 1
+
+[[main.entries]]
+weight = 3000
+obj = "obj.chefs_hat"
+count = 1
+
+[[main.entries]]
+weight = 1500
+obj = "obj.uncut_sapphire"
+count = 1
+
+[[main.entries]]
+weight = 46500
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 950 (Mummy).

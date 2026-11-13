@@ -12,7 +12,7 @@ internal object TestRealmConfig {
             baseXpRate = 1.0,
             globalXpRate = 1.0,
             spawnCoord = CoordGrid(0, 50, 50, 0, 0),
-            respawnCoord = CoordGrid(0, 50, 50, 0, 0),
+            respawnCoord = CoordGrid(0, 50, 50, 21, 18),
             devMode = false,
             requireRegistration = false,
             autoAssignDisplayNames = true,

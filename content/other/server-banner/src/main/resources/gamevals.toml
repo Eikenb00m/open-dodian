@@ -1,0 +1,5 @@
+[gamevals.interface]
+server_banner = 1102
+
+[gamevals.clientscript]
+server_banner_init = 45600

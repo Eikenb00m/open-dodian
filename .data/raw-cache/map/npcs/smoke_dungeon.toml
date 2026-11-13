@@ -1,192 +1,141 @@
-[[spawn]]
-npc = "npc.elemental_fire"
-coords = "0_51_146_17_6"
+## Smoke Dungeon
 
 [[spawn]]
-npc = "npc.elemental_fire"
-coords = "0_51_146_21_57"
+npc = "npc.black_dragon"
+coords = "0_50_146_11_16"
 
 [[spawn]]
-npc = "npc.elemental_fire"
-coords = "0_51_146_23_15"
+npc = "npc.black_dragon"
+coords = "0_50_146_11_7"
 
 [[spawn]]
-npc = "npc.elemental_fire"
-coords = "0_51_146_24_16"
+npc = "npc.black_dragon"
+coords = "0_50_146_13_18"
 
 [[spawn]]
-npc = "npc.elemental_fire"
-coords = "0_51_146_38_56"
+npc = "npc.black_dragon"
+coords = "0_50_146_14_11"
 
 [[spawn]]
-npc = "npc.elemental_fire"
-coords = "0_51_146_42_59"
+npc = "npc.black_dragon"
+coords = "0_50_146_16_5"
 
 [[spawn]]
-npc = "npc.elemental_fire"
-coords = "0_51_146_55_8"
+npc = "npc.black_dragon"
+coords = "0_50_146_17_20"
 
 [[spawn]]
-npc = "npc.elemental_fire"
-coords = "0_51_146_56_57"
+npc = "npc.black_dragon"
+coords = "0_50_146_8_5"
 
 [[spawn]]
-npc = "npc.elemental_fire"
-coords = "0_51_146_57_10"
+npc = "npc.blue_dragon"
+coords = "0_50_146_29_24"
 
 [[spawn]]
-npc = "npc.elemental_fire"
-coords = "0_51_146_58_54"
+npc = "npc.blue_dragon"
+coords = "0_50_146_35_27"
 
 [[spawn]]
-npc = "npc.elemental_fire"
-coords = "0_51_146_6_12"
+npc = "npc.blue_dragon"
+coords = "0_50_146_36_30"
 
 [[spawn]]
-npc = "npc.elemental_fire"
-coords = "0_51_146_6_20"
+npc = "npc.blue_dragon"
+coords = "0_50_146_37_43"
 
 [[spawn]]
-npc = "npc.elemental_fire"
-coords = "0_51_146_6_39"
+npc = "npc.blue_dragon"
+coords = "0_50_146_38_36"
 
 [[spawn]]
-npc = "npc.firegiant"
-coords = "0_51_146_30_31"
+npc = "npc.blue_dragon"
+coords = "0_50_146_39_41"
 
 [[spawn]]
-npc = "npc.firegiant2"
-coords = "0_51_146_42_56"
+npc = "npc.blue_dragon"
+coords = "0_50_146_42_27"
 
 [[spawn]]
-npc = "npc.slayer_dust_devil_guard"
-coords = "0_49_146_55_20"
+npc = "npc.blue_dragon"
+coords = "0_50_146_42_39"
 
 [[spawn]]
-npc = "npc.slayer_dustdevil"
-coords = "0_49_146_43_18"
+npc = "npc.blue_dragon"
+coords = "0_50_146_47_16"
 
 [[spawn]]
-npc = "npc.slayer_dustdevil"
-coords = "0_49_146_44_22"
+npc = "npc.blue_dragon"
+coords = "0_50_146_47_24"
 
 [[spawn]]
-npc = "npc.slayer_dustdevil"
-coords = "0_49_146_46_15"
+npc = "npc.green_dragon"
+coords = "0_50_146_33_14"
 
 [[spawn]]
-npc = "npc.slayer_dustdevil"
-coords = "0_49_146_47_20"
+npc = "npc.green_dragon"
+coords = "0_50_146_35_17"
 
 [[spawn]]
-npc = "npc.slayer_dustdevil"
-coords = "0_49_146_47_38"
+npc = "npc.green_dragon"
+coords = "0_50_146_35_9"
 
 [[spawn]]
-npc = "npc.slayer_dustdevil"
-coords = "0_49_146_48_17"
+npc = "npc.green_dragon"
+coords = "0_50_146_38_6"
 
 [[spawn]]
-npc = "npc.slayer_dustdevil"
-coords = "0_49_146_48_24"
+npc = "npc.green_dragon"
+coords = "0_50_146_50_18"
 
 [[spawn]]
-npc = "npc.slayer_dustdevil"
-coords = "0_49_146_49_34"
+npc = "npc.green_dragon"
+coords = "0_50_146_50_27"
 
 [[spawn]]
-npc = "npc.slayer_dustdevil"
-coords = "0_49_146_51_20"
+npc = "npc.green_dragon"
+coords = "0_50_146_51_13"
 
 [[spawn]]
-npc = "npc.slayer_dustdevil"
-coords = "0_49_146_51_23"
+npc = "npc.green_dragon"
+coords = "0_50_146_51_23"
 
 [[spawn]]
-npc = "npc.slayer_dustdevil"
-coords = "0_49_146_51_37"
+npc = "npc.king_dragon"
+coords = "0_51_146_51_32"
 
 [[spawn]]
-npc = "npc.slayer_dustdevil"
-coords = "0_49_146_52_34"
+npc = "npc.red_dragon"
+coords = "0_50_146_19_35"
 
 [[spawn]]
-npc = "npc.slayer_dustdevil"
-coords = "0_49_146_53_39"
+npc = "npc.red_dragon"
+coords = "0_50_146_21_31"
 
 [[spawn]]
-npc = "npc.slayer_pyrefiend_1"
-coords = "0_51_146_2_55"
+npc = "npc.red_dragon"
+coords = "0_50_146_22_40"
 
 [[spawn]]
-npc = "npc.slayer_pyrefiend_1"
-coords = "0_51_146_6_36"
+npc = "npc.red_dragon"
+coords = "0_50_146_23_49"
 
 [[spawn]]
-npc = "npc.slayer_pyrefiend_1"
-coords = "0_51_146_7_43"
+npc = "npc.red_dragon"
+coords = "0_50_146_23_54"
 
 [[spawn]]
-npc = "npc.slayer_pyrefiend_2"
-coords = "0_51_146_10_53"
+npc = "npc.red_dragon"
+coords = "0_50_146_28_48"
 
 [[spawn]]
-npc = "npc.slayer_pyrefiend_2"
-coords = "0_51_146_11_45"
+npc = "npc.red_dragon"
+coords = "0_50_146_31_53"
 
 [[spawn]]
-npc = "npc.slayer_pyrefiend_2"
-coords = "0_51_146_15_33"
+npc = "npc.red_dragon"
+coords = "0_50_146_43_13"
 
 [[spawn]]
-npc = "npc.slayer_pyrefiend_2"
-coords = "0_51_146_19_57"
-
-[[spawn]]
-npc = "npc.slayer_pyrefiend_2"
-coords = "0_51_146_21_37"
-
-[[spawn]]
-npc = "npc.slayer_pyrefiend_2"
-coords = "0_51_146_24_49"
-
-[[spawn]]
-npc = "npc.slayer_pyrefiend_3"
-coords = "0_51_146_13_8"
-
-[[spawn]]
-npc = "npc.slayer_pyrefiend_3"
-coords = "0_51_146_16_24"
-
-[[spawn]]
-npc = "npc.slayer_pyrefiend_3"
-coords = "0_51_146_7_14"
-
-[[spawn]]
-npc = "npc.slayer_pyrefiend_3"
-coords = "0_51_146_9_22"
-
-[[spawn]]
-npc = "npc.slayer_pyrefiend_4"
-coords = "0_51_146_25_18"
-
-[[spawn]]
-npc = "npc.slayer_pyrefiend_4"
-coords = "0_51_146_34_35"
-
-[[spawn]]
-npc = "npc.slayer_pyrefiend_4"
-coords = "0_51_146_38_54"
-
-[[spawn]]
-npc = "npc.slayer_pyrefiend_4"
-coords = "0_51_146_38_6"
-
-[[spawn]]
-npc = "npc.slayer_pyrefiend_4"
-coords = "0_51_146_52_8"
-
-[[spawn]]
-npc = "npc.slayer_pyrefiend_4"
-coords = "0_51_146_54_59"
-
+npc = "npc.red_dragon"
+coords = "0_50_146_43_23"

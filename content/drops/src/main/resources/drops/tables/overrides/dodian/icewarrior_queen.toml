@@ -1,0 +1,26 @@
+id = "Ice warrior Dodian Drops"
+npcs = ["npc.icewarrior_queen"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Ice warrior Dodian Drops"
+
+[[main.entries]]
+weight = 8000
+obj = "obj.mithril_pickaxe"
+count = 1
+
+[[main.entries]]
+weight = 10000
+obj = "obj.mithril_armoured_boots"
+count = 1
+
+[[main.entries]]
+weight = 82000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 2851 (Ice warrior).

@@ -1,0 +1,37 @@
+id = "Berserk barbarian spirit Dodian Drops"
+npcs = ["npc.brut_angry_spirit3"]
+
+[main]
+total = 100000
+name = "Berserk barbarian spirit Dodian Drops"
+
+[[main.entries]]
+weight = 170
+obj = "obj.viking_helmet_slash"
+count = 1
+
+[[main.entries]]
+weight = 4000
+obj = "obj.cert_yew_logs"
+count = 30
+
+[[main.entries]]
+weight = 400
+obj = "obj.rune_armoured_boots"
+count = 1
+
+[[main.entries]]
+weight = 12000
+obj = "obj.unidentified_kwuarm"
+count = 1
+
+[[main.entries]]
+weight = 15000
+obj = "obj.unidentified_irit"
+count = 1
+
+[[main.entries]]
+weight = 68430
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 5565 (Berserk barbarian spirit).

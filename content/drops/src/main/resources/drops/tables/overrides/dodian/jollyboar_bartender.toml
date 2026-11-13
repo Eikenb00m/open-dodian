@@ -1,0 +1,46 @@
+id = "Bartender Dodian Drops"
+npcs = ["npc.jollyboar_bartender"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Bartender Dodian Drops"
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_2h_sword"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_platebody"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_platelegs"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.rune_full_helm"
+count = 1
+
+[[main.entries]]
+weight = 7000
+obj = "obj.cert_flax"
+count = "15..25"
+
+[[main.entries]]
+weight = 8000
+obj = "obj.iron_arrowheads"
+count = "30..50"
+
+[[main.entries]]
+weight = 81000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 738 (Bartender).

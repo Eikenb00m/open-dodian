@@ -63,6 +63,7 @@ internal object StandardOverlays {
             "component.toplevel_osrs_stretch:floater",
             "component.toplevel_osrs_stretch:buff_bar",
             "component.toplevel_osrs_stretch:stat_boosts_hud",
+            "component.toplevel_osrs_stretch:helper",
             "component.toplevel_osrs_stretch:helper_content",
             "component.toplevel_osrs_stretch:hpbar_hud",
             "component.toplevel_osrs_stretch:popout",

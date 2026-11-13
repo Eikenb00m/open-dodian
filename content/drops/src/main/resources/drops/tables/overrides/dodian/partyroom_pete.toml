@@ -1,0 +1,36 @@
+id = "Party Pete Dodian Drops"
+npcs = ["npc.partyroom_pete"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Party Pete Dodian Drops"
+
+[[main.entries]]
+weight = 1100
+obj = "obj.abyssal_whip"
+count = 1
+
+[[main.entries]]
+weight = 50000
+obj = "obj.coins"
+count = "100..5000"
+
+[[main.entries]]
+weight = 15000
+obj = "obj.bronze_warhammer"
+count = 1
+
+[[main.entries]]
+weight = 5000
+obj = "obj.black_warhammer"
+count = 1
+
+[[main.entries]]
+weight = 28900
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 659 (Party Pete).

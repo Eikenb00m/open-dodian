@@ -1,0 +1,42 @@
+id = "Skeleton Hellhound Dodian Drops"
+npcs = ["npc.skeleton_hellhound"]
+
+[[guaranteed]]
+obj = "obj.big_bones"
+count = 1
+
+[main]
+total = 100000
+name = "Skeleton Hellhound Dodian Drops"
+
+[[main.entries]]
+weight = 10
+obj = "obj.dagganoth_mage_legs"
+count = 1
+
+[[main.entries]]
+weight = 10
+obj = "obj.dagganoth_mage_body"
+count = 1
+
+[[main.entries]]
+weight = 550
+obj = "obj.powering_crystal3"
+count = 1
+
+[[main.entries]]
+weight = 12000
+obj = "obj.unidentified_cadantine"
+count = "3..5"
+
+[[main.entries]]
+weight = 10000
+obj = "obj.cert_big_bones"
+count = "23..46"
+
+[[main.entries]]
+weight = 77430
+obj = "obj.coins"
+count = "5000..10000"
+
+# Converted from Dodian uber3_drops for npc id 5054 (Skeleton Hellhound).

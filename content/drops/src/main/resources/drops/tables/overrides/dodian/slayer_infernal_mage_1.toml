@@ -1,0 +1,41 @@
+id = "Infernal Mage Dodian Drops"
+npcs = ["npc.slayer_infernal_mage_1"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Infernal Mage Dodian Drops"
+
+[[main.entries]]
+weight = 2500
+obj = "obj.mystic_boots"
+count = 1
+
+[[main.entries]]
+weight = 2500
+obj = "obj.mystic_gloves"
+count = 1
+
+[[main.entries]]
+weight = 2500
+obj = "obj.mystic_hat"
+count = 1
+
+[[main.entries]]
+weight = 2500
+obj = "obj.mystic_robe_top"
+count = 1
+
+[[main.entries]]
+weight = 2500
+obj = "obj.mystic_robe_bottom"
+count = 1
+
+[[main.entries]]
+weight = 87500
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 443 (Infernal Mage).

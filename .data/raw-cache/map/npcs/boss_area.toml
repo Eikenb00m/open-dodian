@@ -1,0 +1,189 @@
+## Boss Area
+
+[[spawn]]
+npc = "npc.abyssal_pyramid"
+coords = "0_28_70_51_32"
+
+[[spawn]]
+npc = "npc.arenamage1"
+coords = "0_28_70_39_41"
+
+[[spawn]]
+npc = "npc.banker1"
+coords = "0_28_70_49_46"
+
+[[spawn]]
+npc = "npc.black_knight_titan"
+coords = "0_28_70_10_6"
+
+[[spawn]]
+npc = "npc.black_knight_titan"
+coords = "0_28_70_11_6"
+
+[[spawn]]
+npc = "npc.black_knight_titan"
+coords = "0_28_70_12_6"
+
+[[spawn]]
+npc = "npc.black_knight_titan"
+coords = "0_28_70_13_6"
+
+[[spawn]]
+npc = "npc.black_knight_titan"
+coords = "0_28_70_55_40"
+
+[[spawn]]
+npc = "npc.black_knight_titan"
+coords = "0_28_70_9_6"
+
+[[spawn]]
+npc = "npc.dagcave_magic_boss"
+coords = "0_28_70_46_41"
+
+[[spawn]]
+npc = "npc.dagcave_magic_boss"
+coords = "0_28_70_4_5"
+
+[[spawn]]
+npc = "npc.dagcave_magic_boss"
+coords = "0_28_70_5_6"
+
+[[spawn]]
+npc = "npc.dagcave_magic_boss"
+coords = "0_28_70_6_5"
+
+[[spawn]]
+npc = "npc.dagcave_magic_boss"
+coords = "0_28_70_7_5"
+
+[[spawn]]
+npc = "npc.dagcave_magic_boss"
+coords = "0_28_70_8_5"
+
+[[spawn]]
+npc = "npc.dagcave_magic_boss"
+coords = "0_28_70_9_5"
+
+[[spawn]]
+npc = "npc.dr_harlow_vis"
+coords = "0_28_70_41_51"
+
+[[spawn]]
+npc = "npc.evil_chicken"
+coords = "0_28_70_53_29"
+
+[[spawn]]
+npc = "npc.feud_bandit_toughguy"
+coords = "0_28_70_48_32"
+
+[[spawn]]
+npc = "npc.grandtree_blackdemon"
+coords = "0_28_70_50_36"
+
+[[spawn]]
+npc = "npc.ice_queen"
+coords = "0_28_70_46_38"
+
+[[spawn]]
+npc = "npc.kennith_platform"
+coords = "0_28_70_43_51"
+
+[[spawn]]
+npc = "npc.king_dragon"
+coords = "0_28_70_20_6"
+
+[[spawn]]
+npc = "npc.kolhuman"
+coords = "0_28_70_38_41"
+
+[[spawn]]
+npc = "npc.mm_demon"
+coords = "0_28_70_1_3"
+
+[[spawn]]
+npc = "npc.mm_demon"
+coords = "0_28_70_2_3"
+
+[[spawn]]
+npc = "npc.mm_demon"
+coords = "0_28_70_3_3"
+
+[[spawn]]
+npc = "npc.mm_demon"
+coords = "0_28_70_41_33"
+
+[[spawn]]
+npc = "npc.mm_demon"
+coords = "0_28_70_4_3"
+
+[[spawn]]
+npc = "npc.mm_demon"
+coords = "0_28_70_5_3"
+
+[[spawn]]
+npc = "npc.mm_demon"
+coords = "0_28_70_6_3"
+
+[[spawn]]
+npc = "npc.morgan_post"
+coords = "0_28_70_44_51"
+
+[[spawn]]
+npc = "npc.myq3_vanstrom_klause_human"
+coords = "0_28_70_43_53"
+
+[[spawn]]
+npc = "npc.myq3_vanstrom_klause_human"
+coords = "0_28_70_45_51"
+
+[[spawn]]
+npc = "npc.recruiter"
+coords = "0_28_70_56_32"
+
+[[spawn]]
+npc = "npc.san_tojalon"
+coords = "0_28_70_55_36"
+
+[[spawn]]
+npc = "npc.sang_myq3_female_juvinate"
+coords = "0_28_70_47_54"
+
+[[spawn]]
+npc = "npc.sang_myq3_male_juvenile"
+coords = "0_28_70_42_52"
+
+[[spawn]]
+npc = "npc.sang_myq3_male_juvinate"
+coords = "0_28_70_45_54"
+
+[[spawn]]
+npc = "npc.sang_myq3_male_juvinate"
+coords = "0_28_70_47_53"
+
+[[spawn]]
+npc = "npc.sinister_stranger0"
+coords = "0_28_70_47_51"
+
+[[spawn]]
+npc = "npc.slayer_nechryael"
+coords = "0_28_70_13_8"
+
+[[spawn]]
+npc = "npc.slayer_nechryael"
+coords = "0_28_70_48_40"
+
+[[spawn]]
+npc = "npc.troll_champion"
+coords = "0_28_70_52_42"
+
+[[spawn]]
+npc = "npc.tzhaar_fightcave_swarm_boss"
+coords = "0_28_70_43_27"
+
+[[spawn]]
+npc = "npc.tzhaar_ket1"
+coords = "0_28_70_60_43"
+
+[[spawn]]
+npc = "npc.ungadulu_good"
+coords = "0_28_70_46_35"

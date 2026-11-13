@@ -1,20 +1,17 @@
-[[spawn]]
-npc = "npc.black_dragon"
-coords = "0_38_68_28_24"
+## Evil Chicken Lair
 
 [[spawn]]
-npc = "npc.black_dragon3"
-coords = "0_38_68_27_7"
+npc = "npc.cave_littlebug"
+coords = "0_38_68_31_13"
 
 [[spawn]]
-npc = "npc.black_dragon4"
-coords = "0_38_68_22_18"
-
-[[spawn]]
-npc = "npc.black_dragon5"
+npc = "npc.slayer_bloodveld"
 coords = "0_38_68_16_7"
 
 [[spawn]]
-npc = "npc.chickenquest_baby_black_dragon"
-coords = "0_38_68_6_41"
+npc = "npc.slayer_bloodveld"
+coords = "0_38_68_20_13"
 
+[[spawn]]
+npc = "npc.slayer_bloodveld"
+coords = "0_38_68_22_9"

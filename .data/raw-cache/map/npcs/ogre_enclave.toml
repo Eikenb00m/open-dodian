@@ -1,0 +1,141 @@
+## Ogre Enclave
+
+[[spawn]]
+npc = "npc.ogre_chieftan"
+coords = "0_40_147_11_21"
+
+[[spawn]]
+npc = "npc.ogre_chieftan"
+coords = "0_40_147_12_27"
+
+[[spawn]]
+npc = "npc.ogre_chieftan"
+coords = "0_40_147_15_24"
+
+[[spawn]]
+npc = "npc.ogre_chieftan"
+coords = "0_40_147_17_30"
+
+[[spawn]]
+npc = "npc.ogre_chieftan"
+coords = "0_40_147_19_21"
+
+[[spawn]]
+npc = "npc.ogre_chieftan"
+coords = "0_40_147_20_28"
+
+[[spawn]]
+npc = "npc.ogre_chieftan"
+coords = "0_40_147_20_34"
+
+[[spawn]]
+npc = "npc.ogre_chieftan"
+coords = "0_40_147_23_25"
+
+[[spawn]]
+npc = "npc.ogre_chieftan"
+coords = "0_40_147_24_31"
+
+[[spawn]]
+npc = "npc.ogre_shaman"
+coords = "0_40_147_17_55"
+
+[[spawn]]
+npc = "npc.ogre_shaman"
+coords = "0_40_147_20_51"
+
+[[spawn]]
+npc = "npc.ogre_shaman"
+coords = "0_40_147_21_57"
+
+[[spawn]]
+npc = "npc.ogre_shaman"
+coords = "0_40_147_25_54"
+
+[[spawn]]
+npc = "npc.ogre_shaman"
+coords = "0_40_147_29_56"
+
+[[spawn]]
+npc = "npc.ogre_shaman"
+coords = "0_40_147_45_48"
+
+[[spawn]]
+npc = "npc.ogre_shaman"
+coords = "0_40_147_48_53"
+
+[[spawn]]
+npc = "npc.ogre_shaman"
+coords = "0_40_147_50_44"
+
+[[spawn]]
+npc = "npc.ogre_shaman"
+coords = "0_40_147_51_48"
+
+[[spawn]]
+npc = "npc.ogre_shaman"
+coords = "0_40_147_56_47"
+
+[[spawn]]
+npc = "npc.ogre_trader1"
+coords = "0_40_147_54_13"
+
+[[spawn]]
+npc = "npc.terrorbird"
+coords = "0_40_147_44_33"
+
+[[spawn]]
+npc = "npc.terrorbird"
+coords = "0_40_147_45_28"
+
+[[spawn]]
+npc = "npc.terrorbird"
+coords = "0_40_147_47_24"
+
+[[spawn]]
+npc = "npc.terrorbird"
+coords = "0_40_147_49_32"
+
+[[spawn]]
+npc = "npc.terrorbird"
+coords = "0_40_147_53_30"
+
+[[spawn]]
+npc = "npc.zogre_2"
+coords = "0_38_147_33_36"
+
+[[spawn]]
+npc = "npc.zogre_2"
+coords = "0_38_147_35_30"
+
+[[spawn]]
+npc = "npc.zogre_2"
+coords = "0_38_147_35_34"
+
+[[spawn]]
+npc = "npc.zogre_2"
+coords = "0_38_147_36_38"
+
+[[spawn]]
+npc = "npc.zogre_2"
+coords = "0_38_147_38_35"
+
+[[spawn]]
+npc = "npc.zogre_2"
+coords = "0_38_147_41_31"
+
+[[spawn]]
+npc = "npc.zogre_2"
+coords = "0_38_147_43_37"
+
+[[spawn]]
+npc = "npc.zogre_2"
+coords = "0_38_147_44_33"
+
+[[spawn]]
+npc = "npc.zogre_slash_bash"
+coords = "0_38_147_39_33"
+
+[[spawn]]
+npc = "npc.zogre_slash_bash"
+coords = "0_38_147_43_36"

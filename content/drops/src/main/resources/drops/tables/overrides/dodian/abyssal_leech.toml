@@ -1,0 +1,45 @@
+id = "Abyssal leech Dodian Drops"
+npcs = ["npc.abyssal_leech"]
+
+[[guaranteed]]
+obj = "obj.coins"
+count = "100..2000"
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Abyssal leech Dodian Drops"
+
+[[main.entries]]
+weight = 10000
+obj = "obj.cert_blankrune"
+count = "5..10"
+
+[[main.entries]]
+weight = 8000
+obj = "obj.rcu_pouch_giant"
+count = 1
+
+[[main.entries]]
+weight = 8000
+obj = "obj.rcu_pouch_large"
+count = 1
+
+[[main.entries]]
+weight = 8000
+obj = "obj.rcu_pouch_medium"
+count = 1
+
+[[main.entries]]
+weight = 8000
+obj = "obj.rcu_pouch_small"
+count = 1
+
+[[main.entries]]
+weight = 58000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 2584 (Abyssal leech).

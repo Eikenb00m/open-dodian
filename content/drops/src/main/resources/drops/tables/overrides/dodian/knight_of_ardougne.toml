@@ -1,0 +1,8 @@
+id = "Knight of Ardougne Dodian Drops"
+npcs = ["npc.knight_of_ardougne"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+# Converted from Dodian uber3_drops for npc id 3108 (Knight of Ardougne).

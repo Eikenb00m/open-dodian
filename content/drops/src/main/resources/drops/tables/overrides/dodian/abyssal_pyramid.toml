@@ -1,0 +1,60 @@
+id = "Abyssal guardian Dodian Drops"
+npcs = ["npc.abyssal_pyramid"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[[guaranteed]]
+obj = "obj.coins"
+count = "500..2500"
+
+[main]
+total = 100000
+name = "Abyssal guardian Dodian Drops"
+
+[[main.entries]]
+weight = 1000
+obj = "obj.splitbark_gauntlets"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.splitbark_legs"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.splitbark_body"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.splitbark_helm"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.splitbark_greaves"
+count = 1
+
+[[main.entries]]
+weight = 500
+obj = "obj.redkey"
+count = 1
+
+[[main.entries]]
+weight = 25000
+obj = "obj.cert_blankrune"
+count = "1..25"
+
+[[main.entries]]
+weight = 15000
+obj = "obj.naturerune"
+count = "5..15"
+
+[[main.entries]]
+weight = 54500
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 2585 (Abyssal guardian).

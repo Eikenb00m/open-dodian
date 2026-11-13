@@ -1,0 +1,41 @@
+id = "Black Knight Titan Dodian Drops"
+npcs = ["npc.black_knight_titan"]
+
+[[guaranteed]]
+obj = "obj.coins"
+count = "10000..15000"
+
+[main]
+total = 100000
+name = "Black Knight Titan Dodian Drops"
+
+[[main.entries]]
+weight = 500
+obj = "obj.uncut_dragonstone"
+count = 1
+
+[[main.entries]]
+weight = 300
+obj = "obj.dragon_2h_sword"
+count = 1
+
+[[main.entries]]
+weight = 450
+obj = "obj.tzhaar_cape_obsidian"
+count = 1
+
+[[main.entries]]
+weight = 650
+obj = "obj.yellowkey"
+count = 1
+
+[[main.entries]]
+weight = 100
+obj = "obj.uncut_onyx"
+count = 1
+
+[[main.entries]]
+weight = 98000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 4067 (Black Knight Titan).

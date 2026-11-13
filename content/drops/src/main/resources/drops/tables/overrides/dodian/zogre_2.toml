@@ -1,0 +1,8 @@
+id = "Zogre Dodian Drops"
+npcs = ["npc.zogre_2"]
+
+[[guaranteed]]
+obj = "obj.big_bones"
+count = 1
+
+# Converted from Dodian uber3_drops for npc id 867 (Zogre).

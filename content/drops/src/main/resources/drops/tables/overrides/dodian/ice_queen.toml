@@ -1,0 +1,75 @@
+id = "Ice Queen Dodian Drops"
+npcs = ["npc.ice_queen"]
+
+[[guaranteed]]
+obj = "obj.bloodrune"
+count = "5..15"
+
+[[guaranteed]]
+obj = "obj.coins"
+count = "4000..9000"
+
+[main]
+total = 100000
+name = "Ice Queen Dodian Drops"
+
+[[main.entries]]
+weight = 300
+obj = "obj.roving_crystal_bow_new"
+count = 1
+
+[[main.entries]]
+weight = 300
+obj = "obj.roving_crystal_shield_new"
+count = 1
+
+[[main.entries]]
+weight = 450
+obj = "obj.ice_gloves"
+count = 1
+
+[[main.entries]]
+weight = 3000
+obj = "obj.magic_shortbow"
+count = 1
+
+[[main.entries]]
+weight = 5000
+obj = "obj.cert_eye_of_newt"
+count = "5..15"
+
+[[main.entries]]
+weight = 8000
+obj = "obj.yew_shortbow"
+count = 1
+
+[[main.entries]]
+weight = 5000
+obj = "obj.cert_unidentified_kwuarm"
+count = "5..15"
+
+[[main.entries]]
+weight = 5000
+obj = "obj.cert_unidentified_irit"
+count = "5..15"
+
+[[main.entries]]
+weight = 5000
+obj = "obj.cert_unidentified_cadantine"
+count = "5..15"
+
+[[main.entries]]
+weight = 5000
+obj = "obj.cert_limpwurt_root"
+count = "5..15"
+
+[[main.entries]]
+weight = 5000
+obj = "obj.cert_white_berries"
+count = "5..15"
+
+[[main.entries]]
+weight = 57950
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 4922 (Ice Queen).

@@ -1,0 +1,311 @@
+## East Ardougne
+
+[[spawn]]
+npc = "npc.banker1"
+coords = "0_42_52_39_50"
+
+[[spawn]]
+npc = "npc.knight_of_ardougne"
+coords = "0_41_51_34_42"
+
+[[spawn]]
+npc = "npc.knight_of_ardougne"
+coords = "0_41_51_35_46"
+
+[[spawn]]
+npc = "npc.knight_of_ardougne"
+coords = "0_41_51_36_37"
+
+[[spawn]]
+npc = "npc.knight_of_ardougne"
+coords = "0_41_51_38_45"
+
+[[spawn]]
+npc = "npc.knight_of_ardougne"
+coords = "0_41_51_39_40"
+
+[[spawn]]
+npc = "npc.knight_of_ardougne"
+coords = "0_41_51_40_47"
+
+[[spawn]]
+npc = "npc.knight_of_ardougne"
+coords = "0_41_51_41_37"
+
+[[spawn]]
+npc = "npc.knight_of_ardougne"
+coords = "0_41_51_43_42"
+
+[[spawn]]
+npc = "npc.ranging_guild_armour_salesman"
+coords = "0_42_52_37_41"
+
+## West Ardougne
+
+[[spawn]]
+npc = "npc.recruiter"
+coords = "0_39_51_56_14"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_31_33"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_33_23"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_33_30"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_33_36"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_34_26"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_35_34"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_38_33"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_42_31"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_44_23"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_44_34"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_45_27"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_46_31"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_48_22"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_48_26"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_50_41"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_51_30"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_52_39"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_52_44"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_54_39"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_55_41"
+
+[[spawn]]
+npc = "npc.slayer_crawling_hand_2"
+coords = "0_39_51_56_39"
+
+[[spawn]]
+npc = "npc.slayer_jelly_1"
+coords = "0_39_51_28_61"
+
+[[spawn]]
+npc = "npc.slayer_jelly_1"
+coords = "0_39_51_32_58"
+
+[[spawn]]
+npc = "npc.slayer_jelly_1"
+coords = "0_39_51_34_62"
+
+[[spawn]]
+npc = "npc.slayer_jelly_1"
+coords = "0_39_51_35_59"
+
+[[spawn]]
+npc = "npc.slayer_jelly_1"
+coords = "0_39_51_36_55"
+
+[[spawn]]
+npc = "npc.slayer_jelly_1"
+coords = "0_39_51_39_58"
+
+[[spawn]]
+npc = "npc.slayer_jelly_1"
+coords = "0_39_51_41_54"
+
+[[spawn]]
+npc = "npc.slayer_jelly_1"
+coords = "0_39_51_42_57"
+
+[[spawn]]
+npc = "npc.slayer_jelly_1"
+coords = "0_39_51_42_61"
+
+[[spawn]]
+npc = "npc.slayer_jelly_1"
+coords = "0_39_51_46_50"
+
+[[spawn]]
+npc = "npc.slayer_jelly_1"
+coords = "0_39_51_46_54"
+
+[[spawn]]
+npc = "npc.slayer_jelly_1"
+coords = "0_39_51_52_51"
+
+[[spawn]]
+npc = "npc.slayer_jelly_1"
+coords = "0_39_52_24_0"
+
+[[spawn]]
+npc = "npc.slayer_jelly_1"
+coords = "0_39_52_31_0"
+
+[[spawn]]
+npc = "npc.slayer_jelly_1"
+coords = "0_39_52_39_0"
+
+[[spawn]]
+npc = "npc.slayer_nechryael_spawn"
+coords = "0_39_51_12_33"
+
+[[spawn]]
+npc = "npc.slayer_nechryael_spawn"
+coords = "0_39_51_12_37"
+
+[[spawn]]
+npc = "npc.slayer_nechryael_spawn"
+coords = "0_39_51_15_51"
+
+[[spawn]]
+npc = "npc.slayer_nechryael_spawn"
+coords = "0_39_51_16_39"
+
+[[spawn]]
+npc = "npc.slayer_nechryael_spawn"
+coords = "0_39_51_16_43"
+
+[[spawn]]
+npc = "npc.slayer_nechryael_spawn"
+coords = "0_39_51_16_47"
+
+[[spawn]]
+npc = "npc.slayer_nechryael_spawn"
+coords = "0_39_51_17_55"
+
+[[spawn]]
+npc = "npc.slayer_nechryael_spawn"
+coords = "0_39_51_18_51"
+
+[[spawn]]
+npc = "npc.slayer_nechryael_spawn"
+coords = "0_39_51_19_45"
+
+[[spawn]]
+npc = "npc.slayer_nechryael_spawn"
+coords = "0_39_51_20_33"
+
+[[spawn]]
+npc = "npc.slayer_nechryael_spawn"
+coords = "0_39_51_20_54"
+
+[[spawn]]
+npc = "npc.slayer_nechryael_spawn"
+coords = "0_39_51_23_55"
+
+[[spawn]]
+npc = "npc.slayer_nechryael_spawn"
+coords = "0_39_51_23_58"
+
+[[spawn]]
+npc = "npc.slayer_nechryael_spawn"
+coords = "0_39_51_8_41"
+
+[[spawn]]
+npc = "npc.slayer_pyrefiend_1"
+coords = "0_39_51_18_22"
+
+[[spawn]]
+npc = "npc.slayer_pyrefiend_1"
+coords = "0_39_51_22_21"
+
+[[spawn]]
+npc = "npc.slayer_pyrefiend_1"
+coords = "0_39_51_22_29"
+
+[[spawn]]
+npc = "npc.slayer_pyrefiend_1"
+coords = "0_39_51_24_11"
+
+[[spawn]]
+npc = "npc.slayer_pyrefiend_1"
+coords = "0_39_51_25_26"
+
+[[spawn]]
+npc = "npc.slayer_pyrefiend_1"
+coords = "0_39_51_25_8"
+
+[[spawn]]
+npc = "npc.slayer_pyrefiend_1"
+coords = "0_39_51_26_17"
+
+[[spawn]]
+npc = "npc.slayer_pyrefiend_1"
+coords = "0_39_51_28_29"
+
+[[spawn]]
+npc = "npc.slayer_pyrefiend_1"
+coords = "0_39_51_32_14"
+
+[[spawn]]
+npc = "npc.slayer_pyrefiend_1"
+coords = "0_39_51_34_17"
+
+[[spawn]]
+npc = "npc.slayer_pyrefiend_1"
+coords = "0_39_51_36_10"
+
+[[spawn]]
+npc = "npc.slayer_pyrefiend_1"
+coords = "0_39_51_39_23"
+
+[[spawn]]
+npc = "npc.slayer_pyrefiend_1"
+coords = "0_39_51_41_18"
+
+[[spawn]]
+npc = "npc.slayer_pyrefiend_1"
+coords = "0_39_51_42_14"
+
+[[spawn]]
+npc = "npc.slayer_pyrefiend_1"
+coords = "0_39_51_48_14"
+
+[[spawn]]
+npc = "npc.slayer_pyrefiend_1"
+coords = "0_39_51_49_17"

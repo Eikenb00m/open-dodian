@@ -1,0 +1,46 @@
+id = "King black dragon Dodian Drops"
+npcs = ["npc.king_dragon"]
+
+[[guaranteed]]
+obj = "obj.dragon_bones"
+count = 2
+
+[main]
+total = 100000
+name = "King black dragon Dodian Drops"
+
+[[main.entries]]
+weight = 400
+obj = "obj.ring_of_charos"
+count = 1
+
+[[main.entries]]
+weight = 400
+obj = "obj.dragonfire_shield_uncharged"
+count = 1
+
+[[main.entries]]
+weight = 400
+obj = "obj.brut_dragon_full_helm"
+count = 1
+
+[[main.entries]]
+weight = 400
+obj = "obj.dragon_boots"
+count = 1
+
+[[main.entries]]
+weight = 4000
+obj = "obj.rune_kiteshield"
+count = 1
+
+[[main.entries]]
+weight = 10000
+obj = "obj.cert_dragonhide_black"
+count = 5
+
+[[main.entries]]
+weight = 84400
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 239 (King black dragon).

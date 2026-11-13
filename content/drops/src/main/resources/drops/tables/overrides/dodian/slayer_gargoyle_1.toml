@@ -1,0 +1,66 @@
+id = "Gargoyle Dodian Drops"
+npcs = ["npc.slayer_gargoyle_1"]
+
+[[guaranteed]]
+obj = "obj.big_bones"
+count = 1
+
+[main]
+total = 100000
+name = "Gargoyle Dodian Drops"
+
+[[main.entries]]
+weight = 10000
+obj = "obj.adamant_kiteshield"
+count = 1
+
+[[main.entries]]
+weight = 400
+obj = "obj.granite_maul"
+count = 1
+
+[[main.entries]]
+weight = 400
+obj = "obj.viking_helmet_crush"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.hundred_gauntlets_level_8"
+count = 1
+
+[[main.entries]]
+weight = 5250
+obj = "obj.cert_swordfish"
+count = "12..19"
+
+[[main.entries]]
+weight = 5250
+obj = "obj.cert_kwuarm"
+count = "2..4"
+
+[[main.entries]]
+weight = 3000
+obj = "obj.rune_chainbody"
+count = 1
+
+[[main.entries]]
+weight = 800
+obj = "obj.rune_armoured_boots"
+count = 1
+
+[[main.entries]]
+weight = 5000
+obj = "obj.cert_steel_bar"
+count = "12..21"
+
+[[main.entries]]
+weight = 4000
+obj = "obj.rune_med_helm"
+count = 1
+
+[[main.entries]]
+weight = 64900
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 412 (Gargoyle).

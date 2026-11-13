@@ -1,0 +1,273 @@
+## Goblin Cave
+
+[[spawn]]
+npc = "npc.brut_angry_spirit3"
+coords = "0_40_153_18_19"
+
+## Kandarin Underground
+
+[[spawn]]
+npc = "npc.brut_angry_spirit3"
+coords = "0_41_153_31_15"
+
+[[spawn]]
+npc = "npc.brut_angry_spirit3"
+coords = "0_41_153_35_14"
+
+[[spawn]]
+npc = "npc.brut_angry_spirit3"
+coords = "0_41_153_35_19"
+
+[[spawn]]
+npc = "npc.brut_angry_spirit3"
+coords = "0_41_153_35_6"
+
+[[spawn]]
+npc = "npc.brut_angry_spirit3"
+coords = "0_41_153_36_3"
+
+[[spawn]]
+npc = "npc.brut_angry_spirit3"
+coords = "0_41_153_38_17"
+
+[[spawn]]
+npc = "npc.brut_angry_spirit3"
+coords = "0_41_153_39_7"
+
+[[spawn]]
+npc = "npc.brut_angry_spirit3"
+coords = "0_41_153_40_4"
+
+[[spawn]]
+npc = "npc.brut_angry_spirit3"
+coords = "0_41_153_41_14"
+
+[[spawn]]
+npc = "npc.brut_angry_spirit3"
+coords = "0_41_153_42_18"
+
+[[spawn]]
+npc = "npc.brut_mithril_dragon"
+coords = "0_41_153_32_36"
+
+[[spawn]]
+npc = "npc.brut_mithril_dragon"
+coords = "0_41_153_36_28"
+
+[[spawn]]
+npc = "npc.brut_mithril_dragon"
+coords = "0_41_153_37_31"
+
+[[spawn]]
+npc = "npc.brut_mithril_dragon"
+coords = "0_41_153_41_40"
+
+[[spawn]]
+npc = "npc.brut_mithril_dragon"
+coords = "0_41_153_42_33"
+
+[[spawn]]
+npc = "npc.icegiant"
+coords = "0_42_153_29_51"
+
+[[spawn]]
+npc = "npc.icegiant"
+coords = "0_42_153_34_53"
+
+[[spawn]]
+npc = "npc.icegiant"
+coords = "0_42_153_37_52"
+
+[[spawn]]
+npc = "npc.icegiant"
+coords = "0_42_153_44_52"
+
+[[spawn]]
+npc = "npc.icewarrior_queen"
+coords = "0_42_153_10_45"
+
+[[spawn]]
+npc = "npc.icewarrior_queen"
+coords = "0_42_153_12_49"
+
+[[spawn]]
+npc = "npc.icewarrior_queen"
+coords = "0_42_153_18_50"
+
+[[spawn]]
+npc = "npc.icewarrior_queen"
+coords = "0_42_153_21_49"
+
+[[spawn]]
+npc = "npc.icewarrior_queen"
+coords = "0_42_153_23_52"
+
+[[spawn]]
+npc = "npc.icewarrior_queen"
+coords = "0_42_153_7_44"
+
+[[spawn]]
+npc = "npc.slayer_abberant_spectre_1"
+coords = "0_41_154_16_8"
+
+[[spawn]]
+npc = "npc.slayer_abberant_spectre_1"
+coords = "0_41_154_18_6"
+
+[[spawn]]
+npc = "npc.slayer_abberant_spectre_1"
+coords = "0_41_154_19_10"
+
+[[spawn]]
+npc = "npc.slayer_abberant_spectre_1"
+coords = "0_41_154_21_5"
+
+[[spawn]]
+npc = "npc.slayer_abberant_spectre_1"
+coords = "0_41_154_22_8"
+
+[[spawn]]
+npc = "npc.slayer_abberant_spectre_1"
+coords = "0_41_154_24_5"
+
+[[spawn]]
+npc = "npc.slayer_abberant_spectre_1"
+coords = "0_41_154_24_9"
+
+[[spawn]]
+npc = "npc.slayer_bloodveld"
+coords = "0_41_153_19_55"
+
+[[spawn]]
+npc = "npc.slayer_bloodveld"
+coords = "0_41_153_24_51"
+
+[[spawn]]
+npc = "npc.slayer_bloodveld"
+coords = "0_41_153_28_51"
+
+[[spawn]]
+npc = "npc.slayer_bloodveld"
+coords = "0_41_153_33_51"
+
+[[spawn]]
+npc = "npc.slayer_bloodveld"
+coords = "0_41_153_37_51"
+
+[[spawn]]
+npc = "npc.slayer_bloodveld"
+coords = "0_41_153_40_60"
+
+[[spawn]]
+npc = "npc.slayer_bloodveld"
+coords = "0_41_153_42_50"
+
+[[spawn]]
+npc = "npc.slayer_bloodveld"
+coords = "0_41_153_42_58"
+
+[[spawn]]
+npc = "npc.slayer_gargoyle_1"
+coords = "0_41_153_16_63"
+
+[[spawn]]
+npc = "npc.slayer_gargoyle_1"
+coords = "0_41_153_17_59"
+
+[[spawn]]
+npc = "npc.slayer_gargoyle_1"
+coords = "0_41_153_22_56"
+
+[[spawn]]
+npc = "npc.slayer_gargoyle_1"
+coords = "0_41_153_22_59"
+
+[[spawn]]
+npc = "npc.slayer_gargoyle_1"
+coords = "0_41_153_24_60"
+
+[[spawn]]
+npc = "npc.slayer_gargoyle_1"
+coords = "0_41_153_25_63"
+
+[[spawn]]
+npc = "npc.slayer_gargoyle_1"
+coords = "0_41_154_21_0"
+
+[[spawn]]
+npc = "npc.wolf"
+coords = "0_41_153_62_11"
+
+[[spawn]]
+npc = "npc.wolf"
+coords = "0_42_153_0_13"
+
+[[spawn]]
+npc = "npc.wolf"
+coords = "0_42_153_1_17"
+
+[[spawn]]
+npc = "npc.wolf"
+coords = "0_42_153_6_32"
+
+[[spawn]]
+npc = "npc.wolf"
+coords = "0_42_153_7_28"
+
+[[spawn]]
+npc = "npc.wolf"
+coords = "0_42_153_7_38"
+
+## Legends' Guild Dungeon
+
+[[spawn]]
+npc = "npc.hellhound"
+coords = "0_42_152_14_14"
+
+[[spawn]]
+npc = "npc.hellhound"
+coords = "0_42_152_14_20"
+
+[[spawn]]
+npc = "npc.hellhound"
+coords = "0_42_152_17_17"
+
+[[spawn]]
+npc = "npc.hellhound"
+coords = "0_42_152_17_24"
+
+[[spawn]]
+npc = "npc.shadow_warrior"
+coords = "0_42_152_26_21"
+
+[[spawn]]
+npc = "npc.shadow_warrior"
+coords = "0_42_152_31_26"
+
+[[spawn]]
+npc = "npc.shadow_warrior"
+coords = "0_42_152_35_22"
+
+[[spawn]]
+npc = "npc.shadow_warrior"
+coords = "0_42_152_37_27"
+
+[[spawn]]
+npc = "npc.slayer_infernal_mage_1"
+coords = "0_42_152_28_15"
+
+[[spawn]]
+npc = "npc.slayer_infernal_mage_1"
+coords = "0_42_152_28_23"
+
+[[spawn]]
+npc = "npc.slayer_infernal_mage_1"
+coords = "0_42_152_30_19"
+
+[[spawn]]
+npc = "npc.slayer_infernal_mage_1"
+coords = "0_42_152_36_16"
+
+[[spawn]]
+npc = "npc.slayer_nechryael"
+coords = "0_42_152_10_45"

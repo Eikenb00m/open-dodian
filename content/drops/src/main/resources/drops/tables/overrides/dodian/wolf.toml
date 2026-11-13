@@ -1,0 +1,26 @@
+id = "Wolf Dodian Drops"
+npcs = ["npc.wolf"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Wolf Dodian Drops"
+
+[[main.entries]]
+weight = 15000
+obj = "obj.iron_armoured_boots"
+count = 1
+
+[[main.entries]]
+weight = 15000
+obj = "obj.iron_pickaxe"
+count = 1
+
+[[main.entries]]
+weight = 70000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 106 (Wolf).

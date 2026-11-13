@@ -1,0 +1,2 @@
+[clientscript,server_banner_init](component $text)
+if_setsize(0, 0, ^setsize_minus, ^setsize_minus, if_getlayer($text));

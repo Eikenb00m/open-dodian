@@ -1,0 +1,36 @@
+id = "Mithril Dragon Dodian Drops"
+npcs = ["npc.brut_mithril_dragon"]
+
+[[guaranteed]]
+obj = "obj.dragon_bones"
+count = 1
+
+[main]
+total = 100000
+name = "Mithril Dragon Dodian Drops"
+
+[[main.entries]]
+weight = 100
+obj = "obj.hundred_gauntlets_level_9"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.rune_battleaxe"
+count = 1
+
+[[main.entries]]
+weight = 25000
+obj = "obj.cert_mithril_bar"
+count = 5
+
+[[main.entries]]
+weight = 50
+obj = "obj.brut_dragon_full_helm"
+count = 1
+
+[[main.entries]]
+weight = 72850
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 2919 (Mithril Dragon).

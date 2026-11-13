@@ -1,0 +1,57 @@
+id = "Lesser demon Dodian Drops"
+npcs = ["npc.lesser_demon"]
+
+[[guaranteed]]
+obj = "obj.tbwt_jogre_bones"
+count = 1
+
+[main]
+total = 100000
+name = "Lesser demon Dodian Drops"
+
+[[main.entries]]
+weight = 5000
+obj = "obj.cert_magic_logs"
+count = "19..38"
+
+[[main.entries]]
+weight = 2000
+obj = "obj.mystic_hat_light"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.mystic_robe_top_light"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.mystic_robe_bottom_light"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.mystic_gloves_light"
+count = 1
+
+[[main.entries]]
+weight = 550
+obj = "obj.powering_crystal4"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.mystic_boots_light"
+count = 1
+
+[[main.entries]]
+weight = 72450
+obj = "obj.coins"
+count = "3500..7000"
+
+[[main.entries]]
+weight = 12000
+obj = "obj.cert_yew_logs"
+count = "14..28"
+
+# Converted from Dodian uber3_drops for npc id 2005 (Lesser demon).

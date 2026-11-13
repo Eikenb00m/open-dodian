@@ -1,0 +1,26 @@
+id = "Monk of Zamorak Dodian Drops"
+npcs = ["npc.chaosmonk1"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Monk of Zamorak Dodian Drops"
+
+[[main.entries]]
+weight = 25000
+obj = "obj.white_berries"
+count = 1
+
+[[main.entries]]
+weight = 25000
+obj = "obj.ranarr_weed"
+count = 1
+
+[[main.entries]]
+weight = 50000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 2878 (Monk of Zamorak).

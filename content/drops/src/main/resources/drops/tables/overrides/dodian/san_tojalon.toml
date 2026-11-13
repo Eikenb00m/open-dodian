@@ -1,0 +1,65 @@
+id = "San Tojalon Dodian Drops"
+npcs = ["npc.san_tojalon"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[[guaranteed]]
+obj = "obj.coins"
+count = "4000..9000"
+
+[main]
+total = 100000
+name = "San Tojalon Dodian Drops"
+
+[[main.entries]]
+weight = 300
+obj = "obj.cape_of_legends"
+count = 1
+
+[[main.entries]]
+weight = 300
+obj = "obj.dragon_platelegs"
+count = 1
+
+[[main.entries]]
+weight = 300
+obj = "obj.dragon_chainbody"
+count = 1
+
+[[main.entries]]
+weight = 250
+obj = "obj.dragon_scimitar"
+count = 1
+
+[[main.entries]]
+weight = 300
+obj = "obj.dragon_sq_shield"
+count = 1
+
+[[main.entries]]
+weight = 300
+obj = "obj.dragon_battleaxe"
+count = 1
+
+[[main.entries]]
+weight = 300
+obj = "obj.dragon_longsword"
+count = 1
+
+[[main.entries]]
+weight = 650
+obj = "obj.orangekey"
+count = 1
+
+[[main.entries]]
+weight = 300
+obj = "obj.dragon_plateskirt"
+count = 1
+
+[[main.entries]]
+weight = 97000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 3964 (San Tojalon).

@@ -1,0 +1,61 @@
+id = "Jungle Demon Dodian Drops"
+npcs = ["npc.mm_demon"]
+
+[[guaranteed]]
+obj = "obj.zogre_ancestral_bones_ourg"
+count = 1
+
+[main]
+total = 100000
+name = "Jungle Demon Dodian Drops"
+
+[[main.entries]]
+weight = 150
+obj = "obj.magictraining_wand_master"
+count = 1
+
+[[main.entries]]
+weight = 250
+obj = "obj.magictraining_infinitytop"
+count = 1
+
+[[main.entries]]
+weight = 250
+obj = "obj.magictraining_infinityhat"
+count = 1
+
+[[main.entries]]
+weight = 250
+obj = "obj.magictraining_infinityboots"
+count = 1
+
+[[main.entries]]
+weight = 250
+obj = "obj.magictraining_infinitygloves"
+count = 1
+
+[[main.entries]]
+weight = 250
+obj = "obj.magictraining_infinitybottom"
+count = 1
+
+[[main.entries]]
+weight = 50000
+obj = "obj.coins"
+count = 1000
+
+[[main.entries]]
+weight = 2500
+obj = "obj.cert_unidentified_dwarf_weed"
+count = "3..6"
+
+[[main.entries]]
+weight = 2500
+obj = "obj.cert_wine_of_zamorak"
+count = "3..6"
+
+[[main.entries]]
+weight = 43600
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 1443 (Jungle Demon).

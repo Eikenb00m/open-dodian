@@ -1,0 +1,31 @@
+id = "Jelly Dodian Drops"
+npcs = ["npc.slayer_jelly_1"]
+
+[[guaranteed]]
+obj = "obj.coins"
+count = "500..1000"
+
+[main]
+total = 100000
+name = "Jelly Dodian Drops"
+
+[[main.entries]]
+weight = 15000
+obj = "obj.hundred_gauntlets_level_6"
+count = 1
+
+[[main.entries]]
+weight = 8000
+obj = "obj.hundred_gauntlets_level_7"
+count = 1
+
+[[main.entries]]
+weight = 2000
+obj = "obj.hundred_gauntlets_level_8"
+count = 1
+
+[[main.entries]]
+weight = 75000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 437 (Jelly).

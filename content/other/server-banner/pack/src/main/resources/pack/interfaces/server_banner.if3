@@ -1,0 +1,21 @@
+[[interface]]
+name = "interface.server_banner"
+width = 512
+height = 334
+on_load = ["clientscript.server_banner_init", "component.server_banner:text"]
+
+[[component]]
+name = "text"
+type = "text"
+x = 0
+y = 4
+x_mode = 1
+width = 0
+width_mode = 1
+height = 16
+text = ""
+font = "regular"
+h_align = "center"
+v_align = "center"
+text_shadow = true
+color = "#FFFFFF"

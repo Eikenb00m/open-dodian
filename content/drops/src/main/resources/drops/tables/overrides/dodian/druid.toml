@@ -1,0 +1,42 @@
+id = "Druid Dodian Drops"
+npcs = ["npc.druid"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Druid Dodian Drops"
+
+[[main.entries]]
+weight = 14000
+obj = "obj.limpwurt_root"
+count = 1
+
+[[main.entries]]
+weight = 18000
+obj = "obj.vial_water"
+count = 1
+
+[[main.entries]]
+weight = 18000
+obj = "obj.eye_of_newt"
+count = 1
+
+[[main.entries]]
+weight = 18000
+obj = "obj.unidentified_guam"
+count = 1
+
+[[main.entries]]
+weight = 18000
+obj = "obj.vial_empty"
+count = 1
+
+[[main.entries]]
+weight = 14000
+obj = "obj.unidentified_tarromin"
+count = 1
+
+# Converted from Dodian uber3_drops for npc id 3098 (Druid).

@@ -1,152 +1,93 @@
-[[spawn]]
-npc = "npc.bat"
-coords = "0_38_154_11_6"
+## Grand Tree Tunnels
 
 [[spawn]]
-npc = "npc.bat"
+npc = "npc.battlefield_terrorbird_mountedspear"
+coords = "0_38_154_12_16"
+
+[[spawn]]
+npc = "npc.battlefield_terrorbird_mountedspear"
 coords = "0_38_154_19_4"
 
 [[spawn]]
-npc = "npc.bat"
-coords = "0_38_154_28_4"
+npc = "npc.battlefield_terrorbird_mountedspear"
+coords = "0_38_154_29_5"
 
 [[spawn]]
-npc = "npc.bat"
-coords = "0_38_154_37_7"
+npc = "npc.battlefield_terrorbird_mountedspear"
+coords = "0_38_154_40_9"
 
 [[spawn]]
-npc = "npc.giantrat"
-coords = "0_38_154_18_47"
+npc = "npc.battlefield_terrorbird_mountedspear"
+coords = "0_38_154_48_7"
 
 [[spawn]]
-npc = "npc.giantrat"
-coords = "0_38_154_18_56"
+npc = "npc.battlefield_terrorbird_mountedspear"
+coords = "0_38_154_49_14"
 
 [[spawn]]
-npc = "npc.giantrat"
-coords = "0_38_154_24_54"
+npc = "npc.battlefield_terrorbird_mountedspear"
+coords = "0_38_154_57_7"
 
 [[spawn]]
-npc = "npc.giantrat"
-coords = "0_38_154_32_52"
+npc = "npc.battlefield_terrorbird_mountedspear"
+coords = "0_38_154_9_8"
 
 [[spawn]]
-npc = "npc.giantrat"
-coords = "0_38_154_34_25"
+npc = "npc.hundred_ilm_snake"
+coords = "0_37_154_24_17"
 
 [[spawn]]
-npc = "npc.giantrat"
-coords = "0_38_154_45_40"
+npc = "npc.mm2_demon_glough_nomove"
+coords = "0_37_154_24_47"
 
 [[spawn]]
-npc = "npc.giantrat"
-coords = "0_38_154_50_58"
+npc = "npc.nzone_hosidiusquest_snake_hard"
+coords = "0_37_154_23_21"
 
 [[spawn]]
-npc = "npc.giantrat"
-coords = "0_38_154_51_32"
+npc = "npc.nzone_hosidiusquest_snake_hard"
+coords = "0_38_154_10_25"
 
 [[spawn]]
-npc = "npc.giantrat"
-coords = "0_38_154_56_56"
+npc = "npc.nzone_hosidiusquest_snake_hard"
+coords = "0_38_154_13_36"
 
 [[spawn]]
-npc = "npc.gnomekingsguard"
-coords = "0_38_154_29_39"
+npc = "npc.nzone_hosidiusquest_snake_hard"
+coords = "0_38_154_22_29"
 
 [[spawn]]
-npc = "npc.gnomekingsguard"
-coords = "0_38_154_33_38"
+npc = "npc.nzone_hosidiusquest_snake_hard"
+coords = "0_38_154_26_20"
 
 [[spawn]]
-npc = "npc.gnomekingsguard"
-coords = "0_38_154_33_43"
+npc = "npc.nzone_hosidiusquest_snake_hard"
+coords = "0_38_154_33_39"
 
 [[spawn]]
-npc = "npc.grandtree_narnode"
-coords = "0_38_154_32_41"
+npc = "npc.nzone_hosidiusquest_snake_hard"
+coords = "0_38_154_37_19"
 
 [[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_10_35"
+npc = "npc.nzone_hosidiusquest_snake_hard"
+coords = "0_38_154_50_47"
 
 [[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_11_26"
+npc = "npc.nzone_hosidiusquest_snake_hard"
+coords = "0_38_154_55_33"
 
 [[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_15_35"
+npc = "npc.nzone_hosidiusquest_snake_normal"
+coords = "0_37_154_25_19"
 
 [[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_19_26"
+npc = "npc.watchtower_wizard"
+coords = "0_37_154_22_39"
 
 [[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_20_22"
+npc = "npc.watchtower_wizard"
+coords = "0_37_154_25_43"
 
 [[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_21_34"
-
-[[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_24_16"
-
-[[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_24_2"
-
-[[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_24_27"
-
-[[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_26_21"
-
-[[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_28_7"
-
-[[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_30_34"
-
-[[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_35_4"
-
-[[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_38_32"
-
-[[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_43_10"
-
-[[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_44_31"
-
-[[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_49_13"
-
-[[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_50_9"
-
-[[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_56_5"
-
-[[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_57_10"
-
-[[spawn]]
-npc = "npc.rat"
-coords = "0_38_154_6_29"
-
+npc = "npc.watchtower_wizard"
+coords = "0_37_154_28_35"

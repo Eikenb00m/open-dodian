@@ -1,0 +1,53 @@
+## Shilo Village
+
+[[spawn]]
+npc = "npc.0_40_53_memberfish"
+coords = "0_44_46_39_30"
+
+[[spawn]]
+npc = "npc.0_40_53_rarefish"
+coords = "0_44_46_44_28"
+
+[[spawn]]
+npc = "npc.0_40_53_rarefish"
+coords = "0_44_46_49_28"
+
+[[spawn]]
+npc = "npc.banker1"
+coords = "0_44_46_36_11"
+
+[[spawn]]
+npc = "npc.chicken"
+coords = "0_44_46_54_7"
+
+[[spawn]]
+npc = "npc.chicken"
+coords = "0_44_46_55_9"
+
+[[spawn]]
+npc = "npc.chicken"
+coords = "0_44_46_56_10"
+
+[[spawn]]
+npc = "npc.generalshopkeeper1"
+coords = "0_44_46_8_15"
+
+[[spawn]]
+npc = "npc.gerrant"
+coords = "0_44_46_55_24"
+
+[[spawn]]
+npc = "npc.goblin"
+coords = "0_44_46_55_6"
+
+[[spawn]]
+npc = "npc.goblin_red_soldier_2"
+coords = "0_44_46_55_8"
+
+[[spawn]]
+npc = "npc.hero"
+coords = "0_44_46_11_34"
+
+[[spawn]]
+npc = "npc.hero"
+coords = "0_44_46_12_38"

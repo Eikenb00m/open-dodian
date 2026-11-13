@@ -1,0 +1,71 @@
+id = "Ungadulu Dodian Drops"
+npcs = ["npc.ungadulu_good"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Ungadulu Dodian Drops"
+
+[[main.entries]]
+weight = 2500
+obj = "obj.macro_mime_boots"
+count = 1
+
+[[main.entries]]
+weight = 2500
+obj = "obj.macro_mime_gloves"
+count = 1
+
+[[main.entries]]
+weight = 2500
+obj = "obj.macro_mime_legs"
+count = 1
+
+[[main.entries]]
+weight = 2500
+obj = "obj.macro_mime_top"
+count = 1
+
+[[main.entries]]
+weight = 600
+obj = "obj.viking_helmet_crush"
+count = 1
+
+[[main.entries]]
+weight = 1000
+obj = "obj.viking_helmet_range"
+count = 1
+
+[[main.entries]]
+weight = 2500
+obj = "obj.rune_kiteshield"
+count = 1
+
+[[main.entries]]
+weight = 2500
+obj = "obj.rune_scimitar"
+count = 1
+
+[[main.entries]]
+weight = 2500
+obj = "obj.macro_mime_mask"
+count = 1
+
+[[main.entries]]
+weight = 15000
+obj = "obj.cert_eye_of_newt"
+count = "5..15"
+
+[[main.entries]]
+weight = 15000
+obj = "obj.cert_limpwurt_root"
+count = "5..15"
+
+[[main.entries]]
+weight = 50900
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 3957 (Ungadulu).

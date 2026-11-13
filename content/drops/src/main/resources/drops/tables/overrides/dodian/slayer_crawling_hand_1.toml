@@ -1,0 +1,26 @@
+id = "Crawling Hand Dodian Drops"
+npcs = ["npc.slayer_crawling_hand_1"]
+
+[[guaranteed]]
+obj = "obj.bones"
+count = 1
+
+[main]
+total = 100000
+name = "Crawling Hand Dodian Drops"
+
+[[main.entries]]
+weight = 25000
+obj = "obj.limpwurt_root"
+count = 1
+
+[[main.entries]]
+weight = 20000
+obj = "obj.coins"
+count = 20
+
+[[main.entries]]
+weight = 55000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 1650 (Crawling Hand).

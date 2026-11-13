@@ -1,0 +1,25 @@
+id = "Red dragon Dodian Drops"
+npcs = ["npc.red_dragon"]
+
+[[guaranteed]]
+obj = "obj.dragon_bones"
+count = 1
+
+[[guaranteed]]
+obj = "obj.dragonhide_red"
+count = 1
+
+[main]
+total = 100000
+name = "Red dragon Dodian Drops"
+
+[[main.entries]]
+weight = 5000
+obj = "obj.rune_full_helm"
+count = 1
+
+[[main.entries]]
+weight = 95000
+nothing = true
+
+# Converted from Dodian uber3_drops for npc id 247 (Red dragon).

@@ -1,0 +1,205 @@
+## Kalphite Lair
+
+[[spawn]]
+npc = "npc.kalphite_lord"
+coords = "2_54_148_10_11"
+
+[[spawn]]
+npc = "npc.kalphite_lord"
+coords = "2_54_148_11_17"
+
+[[spawn]]
+npc = "npc.kalphite_lord"
+coords = "2_54_148_13_7"
+
+[[spawn]]
+npc = "npc.kalphite_lord"
+coords = "2_54_148_24_4"
+
+[[spawn]]
+npc = "npc.kalphite_lord"
+coords = "2_54_148_31_4"
+
+[[spawn]]
+npc = "npc.kalphite_lord"
+coords = "2_54_148_41_3"
+
+[[spawn]]
+npc = "npc.kalphite_lord"
+coords = "2_54_148_49_27"
+
+[[spawn]]
+npc = "npc.kalphite_lord"
+coords = "2_54_148_50_10"
+
+[[spawn]]
+npc = "npc.kalphite_lord"
+coords = "2_54_148_50_21"
+
+[[spawn]]
+npc = "npc.kalphite_lord"
+coords = "2_54_148_54_30"
+
+[[spawn]]
+npc = "npc.kalphite_lord"
+coords = "2_54_148_55_19"
+
+[[spawn]]
+npc = "npc.kalphite_lord"
+coords = "2_54_148_58_23"
+
+[[spawn]]
+npc = "npc.kalphite_lord"
+coords = "2_54_148_58_27"
+
+[[spawn]]
+npc = "npc.kalphite_queen"
+coords = "0_54_148_39_18"
+
+[[spawn]]
+npc = "npc.kalphite_queen"
+coords = "0_54_148_41_26"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_10_34"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_11_6"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_13_42"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_14_29"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_15_16"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_17_50"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_18_45"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_19_13"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_19_53"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_22_11"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_22_29"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_23_15"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_25_19"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_25_53"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_27_30"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_29_18"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_34_29"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_35_18"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_39_26"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_40_21"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_6_9"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_8_29"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_8_39"
+
+[[spawn]]
+npc = "npc.kalphite_soldier"
+coords = "2_54_148_9_16"
+
+[[spawn]]
+npc = "npc.kalphite_worker"
+coords = "2_54_148_30_54"
+
+[[spawn]]
+npc = "npc.kalphite_worker"
+coords = "2_54_148_33_38"
+
+[[spawn]]
+npc = "npc.kalphite_worker"
+coords = "2_54_148_34_52"
+
+[[spawn]]
+npc = "npc.kalphite_worker"
+coords = "2_54_148_38_37"
+
+[[spawn]]
+npc = "npc.kalphite_worker"
+coords = "2_54_148_40_53"
+
+[[spawn]]
+npc = "npc.kalphite_worker"
+coords = "2_54_148_42_39"
+
+[[spawn]]
+npc = "npc.kalphite_worker"
+coords = "2_54_148_42_45"
+
+[[spawn]]
+npc = "npc.kalphite_worker"
+coords = "2_54_148_45_51"
+
+[[spawn]]
+npc = "npc.kalphite_worker"
+coords = "2_54_148_47_46"
+
+[[spawn]]
+npc = "npc.kalphite_worker"
+coords = "2_54_148_49_54"
+
+[[spawn]]
+npc = "npc.kalphite_worker"
+coords = "2_54_148_52_47"
+
+[[spawn]]
+npc = "npc.kalphite_worker"
+coords = "2_54_148_53_52"

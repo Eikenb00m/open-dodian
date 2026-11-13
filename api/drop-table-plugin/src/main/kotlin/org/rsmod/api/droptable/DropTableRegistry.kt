@@ -28,6 +28,9 @@ constructor(tomlResolver: DropTableTomlResolver) {
     private val tablesByLoc: MutableMap<String, RSDropTable<Player, DropRollItem>> = hashMapOf()
     private val tomlTablesByNpc: MutableMap<String, MutableSet<String>> = hashMapOf()
 
+    /** Npcs owned by a table under [OVERRIDE_DIR]; every other table skips them. */
+    private val overriddenNpcs: MutableSet<String> = hashSetOf()
+
     private val logger = InlineLogger()
 
     init {
@@ -92,10 +95,16 @@ constructor(tomlResolver: DropTableTomlResolver) {
                 .map { resource ->
                     val raw = DropTableTomlTextFixer.hoistTableLevelKeys(resource.getContentAsString())
                     val def = mapper.readValue<TomlDropTableDef>(raw)
-                    DropTableTomlParser.parse(def, resolver, sourcePath = resource.path)
+                    val table = DropTableTomlParser.parse(def, resolver, sourcePath = resource.path)
+                    table to resource.path.contains(OVERRIDE_DIR)
                 }
                 .toList()
-        tables.forEach { table -> register(table, DropTableSource.Toml) }
+        val (overrides, regular) = tables.partition { (_, isOverride) -> isOverride }
+        for ((table, _) in overrides) {
+            register(table, DropTableSource.Toml)
+            overriddenNpcs += table.npcs
+        }
+        regular.forEach { (table, _) -> register(table, DropTableSource.Toml) }
         return tomlResources.size
     }
 
@@ -144,6 +153,9 @@ constructor(tomlResolver: DropTableTomlResolver) {
         }
 
         table.npcs.forEach { npc ->
+            if (npc in overriddenNpcs) {
+                return@forEach
+            }
             val existing = tablesByNpc.getOrPut(npc) { mutableListOf() }
             validateRegistration(table, npc, existing, source)
             existing += table
@@ -204,5 +216,9 @@ constructor(tomlResolver: DropTableTomlResolver) {
     private enum class DropTableSource {
         Toml,
         Annotation,
+    }
+
+    private companion object {
+        private const val OVERRIDE_DIR = "drops/tables/overrides/"
     }
 }

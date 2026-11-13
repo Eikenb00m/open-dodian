@@ -92,5 +92,6 @@ internal class GameframeLoader {
             GameframeOverlay("interface.side_channels", "component.toplevel_osrs_stretch:side7"),
             GameframeOverlay("interface.combat_interface", "component.toplevel_osrs_stretch:side0"),
             GameframeOverlay("interface.notification_display", "component.toplevel_osrs_stretch:notifications"),
+            GameframeOverlay("interface.server_banner", "component.toplevel_osrs_stretch:helper"),
         )
 }
