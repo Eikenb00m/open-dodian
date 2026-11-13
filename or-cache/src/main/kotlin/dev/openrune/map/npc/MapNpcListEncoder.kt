@@ -32,5 +32,17 @@ public object MapNpcListEncoder {
             for (packed in packedSpawns.intIterator()) {
                 data.writeInt(packed)
             }
+            // Per-spawn extras trail the list, so a square without any encodes exactly as before.
+            val withExtras = (0 until packedSpawns.size).filterNot { extra(it).isNone }
+            if (withExtras.isEmpty()) {
+                return
+            }
+            data.writeShort(withExtras.size)
+            for (index in withExtras) {
+                val extra = extra(index)
+                data.writeShort(index)
+                data.writeByte(extra.direction)
+                data.writeByte(extra.wanderRange)
+            }
         }
 }

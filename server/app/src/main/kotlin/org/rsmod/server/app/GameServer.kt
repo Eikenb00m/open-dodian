@@ -15,6 +15,7 @@ import dev.openrune.filesystem.Cache
 import dev.openrune.map.GameMapDecoder
 import dev.openrune.map.GameMapSpawnSink
 import dev.openrune.map.npc.MapNpcDefinition
+import dev.openrune.map.npc.MapNpcSpawnExtra
 import dev.openrune.map.obj.MapObjDefinition
 import java.nio.file.Path
 import java.text.DecimalFormat
@@ -35,6 +36,7 @@ import org.rsmod.api.repo.obj.ObjRepository
 import org.rsmod.api.script.WorldTypeScriptContext
 import org.rsmod.api.server.config.ServerConfig
 import org.rsmod.game.entity.Npc
+import org.rsmod.game.map.Direction
 import org.rsmod.game.map.LocZoneStorage
 import org.rsmod.game.obj.Obj
 import org.rsmod.game.obj.ObjEntity
@@ -142,6 +144,22 @@ class GameServer(private val skipTypeVerificationOverride: Boolean? = null) :
                 override fun onNpcSpawn(def: MapNpcDefinition, coords: CoordGrid) {
                     val type = ServerCacheManager.getNpc(def.id) ?: return
                     val npc = Npc(type, coords)
+                    npcRepo.addDelayed(npc, spawnDelay = 0, duration = Int.MAX_VALUE)
+                }
+
+                override fun onNpcSpawn(
+                    def: MapNpcDefinition,
+                    coords: CoordGrid,
+                    extra: MapNpcSpawnExtra,
+                ) {
+                    val type = ServerCacheManager.getNpc(def.id) ?: return
+                    val npc = Npc(type, coords)
+                    if (extra.hasDirection) {
+                        npc.respawnDir = Direction.entries.first { it.id == extra.direction }
+                    }
+                    if (extra.hasWanderRange) {
+                        npc.wanderRange = extra.wanderRange
+                    }
                     npcRepo.addDelayed(npc, spawnDelay = 0, duration = Int.MAX_VALUE)
                 }
 

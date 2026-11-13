@@ -214,8 +214,8 @@ public class Npc(
     public val blockWalk: BlockWalk
         get() = type.blockWalk
 
-    public val wanderRange: Int
-        get() = type.wanderRange
+    /** Starts at the type's range; a map spawn can give this npc its own. */
+    public var wanderRange: Int = type.wanderRange
 
     public val defaultMode: NpcMode
         get() = type.defaultMode
